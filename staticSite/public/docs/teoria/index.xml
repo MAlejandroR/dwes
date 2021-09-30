@@ -1,0 +1,19 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DWES Vespertino – Crear Sitios Estáticos</title>
+    <link>http://MAlejandroR,github.io/staticSite/docs/teoria/</link>
+    <description>Recent content in Crear Sitios Estáticos on DWES Vespertino</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://MAlejandroR,github.io/staticSite/docs/teoria/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>

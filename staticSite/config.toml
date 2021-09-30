@@ -1,0 +1,6 @@
+baseURL = 'http://MAlejandroR,github.io/staticSite'
+languageCode = 'es-ES'
+title = 'DWES Vespertino'
+theme ='docsy'
+
+

@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DWES Vespertino – Tags</title>
+    <link>http://MAlejandroR,github.io/staticSite/tags/</link>
+    <description>Recent content in Tags on DWES Vespertino</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    
+	  <atom:link href="http://MAlejandroR,github.io/staticSite/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
