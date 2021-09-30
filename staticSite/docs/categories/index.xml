@@ -1,0 +1,18 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DWES Vespertino – Categories</title>
+    <link>http://MAlejandroR,github.io/staticSite/categories/</link>
+    <description>Recent content in Categories on DWES Vespertino</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    
+	  <atom:link href="http://MAlejandroR,github.io/staticSite/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+  </channel>
+</rss>
