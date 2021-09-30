@@ -6,6 +6,9 @@ description: >
   
 ---
 
+
+<h1>Hola</h1>
+
 {{% pageinfo %}}
 Escritura de texto en markdown
 
@@ -199,7 +202,7 @@ Large images should always scale down and fit in the content container.
 _The photo above of the Spruce Picea abies shoot with foliage buds: Bjørn Erik Pedersen, CC-BY-SA._
 
 
-## Components
+## <style="align=center"> Components</span>
 
 ### Alerts
 
