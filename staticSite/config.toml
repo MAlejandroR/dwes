@@ -1,6 +1,11 @@
 baseURL = 'http://MAlejandroR,github.io/staticSite'
 languageCode = 'es-ES'
 title = 'DWES Vespertino'
-theme ='docsy'
+theme =['docsy']
+_mege='deep'
+ 
 
+enableEmoji = true
 
+[params]
+custom_css=['/css/estilo.css']

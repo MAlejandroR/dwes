@@ -1,3 +1,12 @@
 [submodule "staticSite/themes/docsy"]
 	path = staticSite/themes/docsy
 	url = https://github.com/google/docsy.git
+[submodule "themes/learn"]
+	path = themes/learn
+	url = https://github.com/matcornic/hugo-theme-learn.git
+[submodule "idiomas/themes/learn"]
+	path = idiomas/themes/learn
+	url = https://github.com/matcornic/hugo-theme-learn.git
+[submodule "themes/relearn"]
+	path = themes/relearn
+	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git

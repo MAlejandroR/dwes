@@ -1,0 +1,1228 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Certificado de profesionalidad nivel 3 – Crear Sitios Estáticos</title>
+    <link>http://certificado.infenlaces.com/docs/teoria/</link>
+    <description>Recent content in Crear Sitios Estáticos on Certificado de profesionalidad nivel 3</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>es-ES</language>
+    <lastBuildDate>Wed, 15 Sep 2021 00:00:00 +0000</lastBuildDate>
+    
+	  <atom:link href="http://certificado.infenlaces.com/docs/teoria/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Instalación</title>
+      <link>http://certificado.infenlaces.com/docs/teoria/1_instalacion/</link>
+      <pubDate>Mon, 04 Oct 2021 12:01:52 +0200</pubDate>
+      
+      <guid>http://certificado.infenlaces.com/docs/teoria/1_instalacion/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;✅
+&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Aprenderemos a instalar &lt;em&gt;hugo&lt;/em&gt; y crear un &lt;strong&gt;nuevo sitio web&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;No olvides, si se necesita, configurar el &lt;strong&gt;path&lt;/strong&gt; del sistema para acceder desde cualquier invocación&lt;/li&gt;
+&lt;li&gt;Gestionamos todo desde un &lt;strong&gt;terminal&lt;/strong&gt; independientemente de usar linux o windows&lt;/li&gt;
+&lt;li&gt;Verifica la versión instalada&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Páginas referenciadas&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Web de visual code : &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;https://code.visualstudio.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;hugo: &lt;a href=&#34;https://gohugo.io&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Web de jetsbrain y phpstorm: &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;https://www.jetbrains.com/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;página de snap : &lt;a href=&#34;https://snapcraft.io/docs/snap-documentation&#34;&gt;https://snapcraft.io/docs/snap-documentation&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;hr&gt;
+&lt;h2 id=&#34;instalación&#34;&gt;Instalación&lt;/h2&gt;
+&lt;p&gt;Tiene instaladores para mac, windows y linux:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/quick-start/#step-1-install-hugo&#34;&gt;https://gohugo.io/getting-started/quick-start/#step-1-install-hugo&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Recuerda:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Instalar la herramienta hugo&lt;/li&gt;
+&lt;li&gt;No olvides, si se necesita, configurar el &lt;strong&gt;path&lt;/strong&gt; del sistema para acceder desde cualquier invocación&lt;/li&gt;
+&lt;li&gt;Gestionamos todo desde un &lt;strong&gt;terminal&lt;/strong&gt; independientemente de usar linux o windows&lt;/li&gt;
+&lt;li&gt;Verifica la versión instalada&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;ul class=&#34;nav nav-tabs&#34; id=&#34;tabs-2&#34; role=&#34;tablist&#34;&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;a class=&#34;nav-link active tab-apt-get&#34;
+        id=&#34;tabs-2-0-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#tabs-2-0&#34; role=&#34;tab&#34; onclick=&#34;handleClick(&amp;#34;apt-get&amp;#34;);&#34;
+        aria-controls=&#34;tabs-2-0&#34; aria-selected=&#34;true&#34;&gt;
+        apt-get
+      &lt;/a&gt;
+    &lt;/li&gt;&lt;li class=&#34;nav-item&#34;&gt;
+      &lt;a class=&#34;nav-link tab-snap&#34;
+        id=&#34;tabs-2-1-tab&#34; data-toggle=&#34;tab&#34; href=&#34;#tabs-2-1&#34; role=&#34;tab&#34; onclick=&#34;handleClick(&amp;#34;snap&amp;#34;);&#34;
+        aria-controls=&#34;tabs-2-1&#34; aria-selected=&#34;false&#34;&gt;
+        snap
+      &lt;/a&gt;
+    &lt;/li&gt;&lt;/ul&gt;
+
+
+&lt;div class=&#34;tab-content&#34; id=&#34;tabs-2-content&#34;&gt;&lt;div class=&#34;tab-pane fade show active&#34;
+        id=&#34;tabs-2-0&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-2-0-tab&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;    sudo apt-get install hugo
+  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;div class=&#34;tab-pane fade&#34;
+        id=&#34;tabs-2-1&#34; role=&#34;tabpanel&#34; aria-labelled-by=&#34;tabs-2-1-tab&#34;&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;    sudo snap install hugo --classic
+  &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  
+&lt;/div&gt;
+
+Si no tuviera &lt;a href=&#34;https://snapcraft.io/docs/snap-documentation&#34;&gt;snap&lt;/a&gt; instalado&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo apt-get install snapd
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;*Mejor instalamos con &lt;strong&gt;snap&lt;/strong&gt; para obtener la versión última&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Instalar con &lt;em&gt;apt-get&lt;/em&gt; instala una versión 0.68 &lt;strong&gt;Versión actual 0.88&lt;/strong&gt;&lt;br&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Descarga del sitio oficial&lt;/h4&gt;
+
+    También puedes  descargar el paquete de la web oficial del sitio de hugo  &lt;a href=&#34;https://gohugo.io&#34;&gt;Página de hugo&lt;/a&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h2 id=&#34;editor-para-el-desarrollo&#34;&gt;Editor para el desarrollo&lt;/h2&gt;
+&lt;p&gt;Interesante usar &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;Visual Code&lt;/a&gt;, aunque para el desarrollo del curso, vamos a utilizar &lt;a href=&#34;https://www.jetbrains.com/phpstorm/&#34;&gt;&lt;em&gt;phpstorm&lt;/em&gt;&lt;/a&gt; de &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;jetbrains&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;sudo snap install code --classic
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Una vez instalado si escriben en el terminal &lt;em&gt;&lt;strong&gt;code .&lt;/strong&gt;&lt;/em&gt; te habre el editor y te carga el directorio actual&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Puedes abrir el terminal desde el entorno&lt;/li&gt;
+&lt;li&gt;Puedes commitear desde el editor y subir a git &lt;em&gt;Esto ya lo veremos más adelante&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Instalar muchos plugins según necesidades&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;crear-un-sitio-nuevo&#34;&gt;Crear un sitio nuevo&lt;/h2&gt;
+&lt;p&gt;Mejor tener una carpeta concreta para los sitios que vayamos a crear.&lt;/p&gt;
+&lt;p&gt;En ella creamos un nuevo sitio con el comando &lt;em&gt;new&lt;/em&gt; del &lt;a href=&#34;https://gohugo.io/commands/hugo/&#34;&gt;CLI de hugo&lt;/a&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-javascript&#34; data-lang=&#34;javascript&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;$&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;hugo&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;new&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;site&lt;/span&gt; &lt;span style=&#34;color:#f92672&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;nombre_del_sitio&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Una vez que creamos un sitio nuevo, observamos cómo se genera una carpeta o directorio con el nombre del sitio creado. Dentro de ella vemos una estructura de directorios&lt;a href=&#34;https://gohugo.io/getting-started/directory-structure/&#34;&gt;(Web de referencia sobre los directorios)&lt;/a&gt;  que hay que entender.&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 231px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/1_instalacion/directory_tree_new_project_hu82d32a09220086b834bfa1b2e1e18bff_13394_100000x700000_fit_box_3.png&#34; width=&#34;221&#34; height=&#34;206&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Listado de directorios creados
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;p&gt;Aquí tienes un &lt;a href=&#34;https://desarrolloweb.com/articulos/componentes-principales-hugo-framework&#34;&gt;artículo&lt;/a&gt; muy claro sobre los directorios creados.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;archetype&lt;/strong&gt;&lt;/em&gt;
+En este directorio tendremos los ficheros base a partir de los cuales crearemos nuevos ficheros usando los comandos de hugo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;content&lt;/strong&gt;&lt;/em&gt;
+Esta es la carpeta donde ubicaremos los contenidos que queremos publicar. Aquí dejaremos todos nuestros ficherso &lt;em&gt;&lt;strong&gt;markdown&lt;/strong&gt;&lt;/em&gt; que contendrán el contenido de nuestro sitio&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;data&lt;/strong&gt;&lt;/em&gt;
+Carpeta para dejar ficheros que van a contener datos para, por ejemplo, rederizar posteriormente en nuestro sitio web. Puede ser un fichero &lt;em&gt;json&lt;/em&gt; con información, un csv (podríamos consumir un csv de nuestro drive también) o una carpeta con fotos o imágenes, como veremos en el ejemplo&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;layouts&lt;/strong&gt;&lt;/em&gt;
+Esta es una carpeta muy importante donde podremos establecer la plantilla para nuestro sitio web. Lo más habitial es utilizar una plantilla de partida, que estará ubicada en la carpete &lt;a href=&#34;#theme&#34;&gt;theme&lt;/a&gt;, manteniendo la misma estructura, modificaremos ficheros del tema o layout base de nuestro sitio  según nuestras necesidades o gustos. Se entenderá en el ejemplo correspondiente&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;static&lt;/strong&gt;&lt;/em&gt;
+Aquí dejaremos todos los ficheros estáticos que vayamos usando en nuestro sitio, como imágenes, vídeos, los cuales pueden ser consumidos directamente por el sitio, sin ninguna necesidad de procesamiento previo (como fichero scss que tienen que ser transpilados a css) Lo iremos viendo principalmente con imágenes&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;asset&lt;/strong&gt;&lt;/em&gt;
+Al igual que static ubicaremos ficheros  estáticos, pero en este caso, antes de ser utilizados, deben de ser procesados de alguna forma y transpilados para utilizarse. Por ejemplo un fichero &lt;strong&gt;sass&lt;/strong&gt; o &lt;strong&gt;less&lt;/strong&gt;, para transformarse en un &lt;strong&gt;css&lt;/strong&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;theme&lt;/strong&gt;&lt;/em&gt;
+Esta carpeta es donde se va a establecer el tema, layout o plantilla base a partir del cual se va a ver nuestro sitio. Es una buena recomendación, especialmente al principio, partir de una plantilla ya hecha. Tenemos muchos &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;temas disponibles&lt;/a&gt;  en la página oficial de hugo. En el siguiente apartado comenzaremos instalando un tema para empezar a construir nuestro sitio web, es lo primero que hay que hacer.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;práctica&#34;&gt;Práctica&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Ahora practica tú&lt;/h4&gt;
+
+    &lt;p&gt;😃&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Crea un sitio nuevo con el nombre que quieras&lt;/li&gt;
+&lt;li&gt;Entra en el directorio creado y observa las diferentes carpetas que tienes&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Temas o layouts base</title>
+      <link>http://certificado.infenlaces.com/docs/teoria/2_temas/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
+      
+      <guid>http://certificado.infenlaces.com/docs/teoria/2_temas/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;✅
+&lt;strong&gt;Objetivo&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Asociar una plantilla o theme al sitio web&lt;/li&gt;
+&lt;li&gt;Acceder al fichero de configuración del sitio web &lt;strong&gt;config.toml&lt;/strong&gt;
+&lt;strong&gt;Páginas referenciadas o de consulta&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&#34;&gt;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&lt;/a&gt; (primera parte)&lt;/li&gt;
+&lt;li&gt;Plantillas disponibles en &lt;em&gt;hugo&lt;/em&gt;  &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plantilla usada como ejemplo&lt;em&gt;relearn&lt;/em&gt;:  &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-relearn/&#34;&gt;https://themes.gohugo.io/themes/hugo-theme-relearn/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;tema-plantilla-o-layout-para-el-sitio-web&#34;&gt;Tema, plantilla o layout para el sitio web&lt;/h1&gt;
+&lt;p&gt;Ahora que tenemos nuestro sitio web, lo primero que tenemos que hacer es asociar una plantilla o theme a nuestro sitio para poder visualizar su contenido.
+Para referirnos a la plantilla usaremos el término  &lt;strong&gt;theme&lt;/strong&gt; o &lt;strong&gt;layout&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Esto va a dar un aspecto concreto y ya podríamos ver nuestro sitio web funcionando. Para ver las &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;plantillas disponibles&lt;/a&gt;   disponibles en el sitio web de &lt;a href=&#34;https://gohugo.io/&#34;&gt;hugo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Vamos a ir proponiendo una plantilla y la usaremos de ejemplo para el resto de las explicaciones&lt;/p&gt;
+&lt;p&gt;Para la práctica final, podrás usar esta misma plantilla o bien usar otra según te guste más.
+Usaremos la plantilla &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-relearn&#34;&gt;relean&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;La página que estáS viendo, está trabajada con la plantilla &lt;a href=&#34;https://www.docsy.dev/docs/&#34;&gt;docsy&lt;/a&gt;&lt;/p&gt;
+&lt;h2 id=&#34;instalar-una-plantilla&#34;&gt;Instalar una plantilla&lt;/h2&gt;
+&lt;p&gt;Tenemos diferentes modos de instalar una plantilla.&lt;/p&gt;
+&lt;p&gt;Todas ellas han de dejar en la carpeta &lt;strong&gt;themes&lt;/strong&gt; de nuestro proyecto una carpeta con el desarrollo de  la plantilla que nos vamos a descargar de &lt;strong&gt;git&lt;/strong&gt;&lt;br&gt;
+Las formas de obtener esta carpeta puede ser:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Descargar el desarrollo y descomprimirlo en la carpeta&lt;/li&gt;
+&lt;li&gt;Clonar directamente en el carpeta con &lt;em&gt;git clone&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Clonarlo como un &lt;em&gt;submodule&lt;/em&gt; a partir de la carpeta del proyecto&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Para ver esta acciones vamos a realizarlo con la plantilla &lt;em&gt;relearn&lt;/em&gt; que hemos comentado anteriormente&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Git&lt;/strong&gt; es una herramienta muy importante que hemos de conocer desde el principio, si bien, la estudiaréis en el módulo de &lt;em&gt;despliegue&lt;/em&gt;&lt;/p&gt;
+&lt;h3 id=&#34;descargar-la-carpeta&#34;&gt;Descargar la carpeta&lt;/h3&gt;
+&lt;p&gt;*Localizamos el sitio web del tema a partir de la página de hugo.&lt;/p&gt;
+&lt;p&gt;Localizamos el sitio de esta plantilla ( a partir de hugo themes)
+&lt;a href=&#34;https://relearn.netlify.app/&#34;&gt;relearn site&lt;/a&gt;
+Ahí podemos ver la documentación y guía de instalación
+Indicamos las acciones, una vez creado el sitio web con hugo y ubicado en la carpeta creada&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;cd themes
+git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git relearn
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;También puedes descargar directamente la carpeta o bien, hacer el git como un submodule desde la carpeta principal del proyecto.
+El nombre que especificamos para la carpeta  destino (en este caso &lt;em&gt;relearn&lt;/em&gt;), es el que nosotros queramos
+Ahora toca modificar el fichero de configuración 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    config.toml
+
+&lt;/span&gt;
+, especificando la ubicación del thema, en este caso el directorio &lt;em&gt;relearn&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;theme&lt;/span&gt; =[&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;relearn&amp;#39;&lt;/span&gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Ahora ya podemos ver un despliegue del sitio web. Para ello invocamos al 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    comando cli
+
+&lt;/span&gt;
+ siguiente:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt;hugo server &amp;amp;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Observación&lt;/h4&gt;
+
+    el &lt;em&gt;&lt;strong&gt;&amp;amp;&lt;/strong&gt;&lt;/em&gt; es para ejecutar el comando en backgroud y no bloquear el terminal
+
+&lt;/div&gt;
+
+&lt;p&gt;Nos abrirá un puerto en el navegador según nos muestre la salida en el terminal con el puerto abierto y veremos nuestro proyecto&lt;/p&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 410px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/2_temas/first_page_hu92d8c90252441a3cbd9dca4642537861_87717_400x300_fit_box_3.png&#34; width=&#34;400&#34; height=&#34;160&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+Página inicial
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;p&gt;Dependiendo del tema, habrá un contenido u otro. Este tema en concreto nos muestra el contenido de una página &lt;strong&gt;themes/relearn/layouts/index.html&lt;/strong&gt;.
+Si quisiéramos cambiar el contenido de la página, en lugar de cambiar el fichero, lo que haríamos es copiar el fichero en la carpeta &lt;strong&gt;layout&lt;/strong&gt; del directorio del proyecto. volveremos a esto más adelante.&lt;/p&gt;
+&lt;h3 id=&#34;práctica&#34;&gt;Práctica&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Ahora practica tú &lt;/h4&gt;
+
+    &lt;p&gt;😀&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Instala el tema &lt;strong&gt;relearn&lt;/strong&gt; (u otro si deseas), en el sitio web que hayas construído (hay plantillas que tienen algún requerimiento especial para ser visualizado, como esta de &lt;strong&gt;docsy&lt;/strong&gt; que usamos para estos apuntes). Mejor usa una más minimalista.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Ejecuta el comando de hugo para abrir un puerto en local&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Visualiza tu proyecto en el servidor&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Contenido</title>
+      <link>http://certificado.infenlaces.com/docs/teoria/3_contenido/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
+      
+      <guid>http://certificado.infenlaces.com/docs/teoria/3_contenido/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;✅
+&lt;strong&gt;Objetivo&lt;/strong&gt;:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Asociar una plantilla o theme al sitio web&lt;/li&gt;
+&lt;li&gt;Estructurar contenido para mejorar la visualización del sitio.&lt;/li&gt;
+&lt;li&gt;Organizar los contenidos que vamos a publicar (Orgnaizaremos por directorios y ficheros)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Páginas referenciadas o de consulta&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/content-management/organization/&#34;&gt;https://gohugo.io/content-management/organization/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&#34;&gt;https://desarrolloweb.com/articulos/generar-contenido-site-hugo&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plantillas disponibles en &lt;em&gt;hugo&lt;/em&gt;  &lt;a href=&#34;https://themes.gohugo.io/&#34;&gt;https://themes.gohugo.io/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Plantilla usada como ejemplo&lt;em&gt;relearn&lt;/em&gt;:  &lt;a href=&#34;https://themes.gohugo.io/themes/hugo-theme-relearn/&#34;&gt;https://themes.gohugo.io/themes/hugo-theme-relearn/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h1 id=&#34;contenido&#34;&gt;Contenido&lt;/h1&gt;
+&lt;p&gt;Ahora que tenemos una plantilla, queda lo principal, que es aportar contenido a nuestro sitio web.
+Son sitios estáticos, por lo que nuestro objetivo es aportar ficheros de texto con datos, información, imágenes, efectos visuales para que sean publicados en la web.
+La idea va a ser aportar ficheros en formato &lt;a href=&#34;&#34;&gt;markdown&lt;/a&gt; cuyo contenido queremos&lt;/p&gt;
+&lt;h2 id=&#34;qué-estructura-tiene-el-contenido-de-las-páginas&#34;&gt;¿Qué estructura tiene el contenido de las páginas?&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Ahora toca aportar contenido a nuestro sitio web. Las páginas Tipos de páginas de contenido. Agrupar las páginas por tipos.&lt;/li&gt;
+&lt;li&gt;En Hugo el contenido se organiza como luego se va a ver en la web. Anidamos el contenido en subdirectorios (&lt;strong&gt;secciones&lt;/strong&gt;): &lt;code&gt;content/&amp;lt;directorios&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Pensar en &lt;strong&gt;front-matter&lt;/strong&gt; - &lt;strong&gt;archetypes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Plantillas específicas para cada modelo&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;creando-contenido-markdown&#34;&gt;Creando contenido: markdown&lt;/h2&gt;
+&lt;p&gt;Para crear nuevo contenido vamos  a generar páginas de texto con formato &lt;strong&gt;markdown&lt;/strong&gt; &lt;a href=&#34;#markdown&#34;&gt;&lt;em&gt;(Hablamos más abajo sobre el tema)&lt;/em&gt;&lt;/a&gt;
+Podemos consultar las siguientes referencias para el texto en markdown. Son las páginas que dirigen la web de hugo&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Daring Fireball: Markdown, John Gruber (Creator of Markdown)&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;Markdown Cheatsheet, Adam Pritchard&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdowntutorial.com/&#34;&gt;Markdown Tutorial (Interactive), Garen Torikian&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;The Markdown Guide, Matt Cone&lt;/a&gt;
+&lt;strong&gt;Otras referencias&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://programminghistorian.org/es/lecciones/introduccion-a-markdown&#34;&gt;https://programminghistorian.org/es/lecciones/introduccion-a-markdown&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Este metalenguaje o lenguaje con marcas es muy utilizado en la documentación técnica.&lt;/p&gt;
+&lt;p&gt;Es importante aprender a utilizarla con cierta flexibilidad&lt;/p&gt;
+&lt;h3 id=&#34;creando-páginas-de-contenido&#34;&gt;Creando páginas de contenido&lt;/h3&gt;
+&lt;p&gt;Lo primero establecemos la organización de nuestros contenidos&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-markmap&#34; data-lang=&#34;markmap&#34;&gt;# Sitio Web
+
+## Sección 1
+ directorio
+### _index.md (fichero indice de sección 1)
+### Tema 1 de la sección 2 (fichero md)
+### Tema 1 de la sección 2 (fichero md)
+## Sección 2
+### _index.md (fichero indice de sección 2)
+### Tema 1 de la sección 2 (fichero md)
+### Tema 1 de la sección 2 (fichero md)
+### Tema 1 de la sección 2 (fichero md)
+## Seccion 3 
+### ....
+## ...
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Observamos cómo usamos diferentes directorios para crear nuestra organización de nuestro contenido.&lt;/p&gt;
+&lt;p&gt;Cada directorio corresponderá a una &lt;strong&gt;sección&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Dentro de cada sección puede haber un fichero &lt;strong&gt;_index.md&lt;/strong&gt; cuyo contenido se visualizará cuando seleccionemos el directorio concreto.
+Por ejemplo para el contenido del curso podría tener una organización como se muestra en la imagen siguiente:&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-markmap&#34; data-lang=&#34;markmap&#34;&gt;# DWES
+
+## Introducción al desarrollo web
+## Sitios estáticos
+### Teoría
+### Práctica
+
+## PHP
+- [Web de referencia](https://php.net)
+### Sintaxis básica
+### Arrays y formularios
+### PHP orientado a objetos
+### Bases de datos
+#### Repaso de sql y concetos de BD
+#### Mysqli en php
+#### PDO en php
+### Librerías y utilidades de php
+### Laravel
+- [Web de referencia](https://laravel.com/docs/8.x)
+#### Uso de un framework en la programación web
+#### Rutas
+#### Controladores y vistas
+#### Eloquent y bases de datos
+&lt;/code&gt;&lt;/pre&gt;&lt;h4 id=&#34;creando-ficheros-y-secciones&#34;&gt;Creando ficheros y secciones&lt;/h4&gt;
+&lt;p&gt;Usaremos el CLI de hugo (línea de comandos) para crear ficheros de contenido y/o secciones&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new &lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;seccion&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;/fichero.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;La sección puede ser un directorio o varios (subdirectorios anidados)&lt;/p&gt;
+&lt;p&gt;Los ficheros se crean en la carpeta &lt;strong&gt;content&lt;/strong&gt; del directorio raíz del proyecto&lt;/p&gt;
+&lt;p&gt;El fichero creado tendrá un  contenido según quede especificado en el fichero &lt;strong&gt;patrón&lt;/strong&gt; ubicado en la carpeta &lt;strong&gt;archetypes/default.md&lt;/strong&gt;
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Creando un fichero md&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;hugo new docs/prueba.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;em&gt;Genera un fichero con el siguiente contenido&lt;/em&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;---&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Prueba&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;date&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;2021-10-04T19:39:33+02:00&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;draft&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;:&lt;/span&gt; &lt;span style=&#34;color:#66d9ef&#34;&gt;false&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;---&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;strong&gt;Las páginas en el directorio content&lt;/strong&gt;
+*Las páginas ubicadas directamente en el directorio &lt;strong&gt;content&lt;/strong&gt; serán páginas decir globales o bundles pages: contacto, about, datos relevantes. Estas páginas no son  secciones y por lo tanto no tendrán contenidos&lt;/p&gt;
+&lt;p&gt;La forma de organizar las secciones dependerá de nuestra visión del sitio y en cualquier caso deben de ser páginas relacionadas con el tema de la sección: teoría, prácticas ,&amp;hellip;.&lt;/p&gt;
+&lt;p&gt;Cada directorio puede contener un fichero llamado &lt;strong&gt;_index.md&lt;/strong&gt; que va a contener el índice o información que se visualizará al cargar la sección concreta, sería como el fichero índice de la sección.&lt;/p&gt;
+&lt;h5 id=&#34;creando-ficheros-con-realearn&#34;&gt;Creando ficheros con realearn&lt;/h5&gt;
+&lt;p&gt;En el caso de la plantilla que estamos usando (&lt;a href=&#34;https://mcshelby.github.io/hugo-theme-relearn/cont/pages/&#34;&gt;ver documentación &lt;/a&gt;), clasifica las páginas de dos tipos, las que son cabecera de un tema o sección (&lt;em&gt;_index.md&lt;/em&gt;) y las que tienen contenido de las mismas.&lt;/p&gt;
+&lt;p&gt;Para crear las páginas de un tipo u otro, tiene una serie de argumentos
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Ejemplo de cómo hacerlo con relearn&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Para crear una página que es cabecera de capítulo (creamos la sección teoría y el fichero _index.md)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt; hugo new chapter --kind teoria/_index.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;ul&gt;
+&lt;li&gt;Para crear un fichero dentro de la sección teoría&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-shell&#34; data-lang=&#34;shell&#34;&gt; hugo new chapter --kind teoria/tema1.md
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;h3 id=&#34;front---matter&#34;&gt;Front   matter&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/content-management/front-matter/&#34;&gt;https://gohugo.io/content-management/front-matter/&lt;/a&gt;
+Cuando generamos contenidos, los ficheros creados vemos que en la cabecera o primeras líneas  pueden tener &lt;em&gt;&lt;strong&gt;metainformación&lt;/strong&gt;&lt;/em&gt;
+Esta información va entre tres líneas y constituye lo que se llama el &lt;strong&gt;front matter&lt;/strong&gt; de la página
+En esta sección daremos valores a variables que luego se pueden utilizar.&lt;/p&gt;
+&lt;p&gt;De los diferentes valores, nos interesa ver alguno que suele estar en el archtypes y suelen aparecer por defecto:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;title&lt;/strong&gt; será el título que va a tener esta página para referenciarse en los diferentes menús&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;weight&lt;/strong&gt; es una de las formas de ordenar las páginas y secciones.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;draft&lt;/strong&gt; Indica si la página es borrador &lt;em&gt;true&lt;/em&gt; o no. En caso de ser borrador nos e visualizará.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;description&lt;/strong&gt; Es una descripcion que aparecerá en la página principal o index de esta sección. Aparecerá para cada página, salvo que se especifique que no lo queramos. visualizará.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;La información del fichero creado anteriormente corresponde al &lt;strong&gt;Front matter&lt;/strong&gt;, el cual es aportado por el fichero base o patrón ubicado en la carpeta &lt;strong&gt;archetypes&lt;/strong&gt;&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;content
+└── blog        &amp;lt;-- Sección, porque es el primer nivel bajo content/  
+    |   ├── funny-cats
+    │   ├── mypost.md
+    │   └── kittens         &amp;lt;-- Sección porque contiene _index.md
+    │       └── _index.md
+    └── tech                &amp;lt;-- Sección porque contiene _index.md
+        └── _index.md
+
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Repaso&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Lo que precede al contenido&lt;/li&gt;
+&lt;li&gt;Sintaxis especial&lt;/li&gt;
+&lt;li&gt;Hay unas variables predefinidas pero el usuario puede crear nuevas.&lt;/li&gt;
+&lt;li&gt;Se genera según el &lt;strong&gt;archetype&lt;/strong&gt; de la sección. Por defecto &lt;em&gt;_default.md&lt;/em&gt;&lt;/li&gt;
+&lt;li&gt;Se pueden pasar valores por defecto a las páginas que descienden de una sección.
+Por ejemplo si ponemos en &lt;code&gt;content/blog/_index.md&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;title&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;Blog&amp;#39;&lt;/span&gt;
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;cascade&lt;/span&gt;]
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;banner&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;images/typewriter.jpg&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Esta página y todas las que descienden de la sección &lt;code&gt;blog&lt;/code&gt; devuelven &lt;code&gt;images/typewriter.jpg&lt;/code&gt; en &lt;code&gt;.Params.banner&lt;/code&gt; a no ser que tengan su propio banner o un ancestro más cercano lo modifique.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Referencias&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/content-management/front-matter/&#34;&gt;https://gohugo.io/content-management/front-matter/&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;https://gohugo.io/variables/page/&#34;&gt;https://gohugo.io/variables/page/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;taxonomías&#34;&gt;Taxonomías&lt;/h2&gt;
+&lt;p&gt;&lt;a href=&#34;https://gohugo.io/content-management/taxonomies&#34;&gt;https://gohugo.io/content-management/taxonomies&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Una taxonomía es una categorización que nos permite clasificar contenido.&lt;/p&gt;
+&lt;p&gt;Por ejemplo, en una web de Películas podríamos tener actores, directores, estudios, géneros, años, premios &amp;hellip;
+A continuación se muestra un breve ejemplo, pero esta parte no la vamos a incluir en nuestro ejemplo.&lt;/p&gt;
+&lt;p&gt;Por defecto Hugo añade las taxonomías &lt;strong&gt;categories&lt;/strong&gt; y &lt;strong&gt;tags&lt;/strong&gt;. Se pueden añadir más en &lt;strong&gt;config&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;taxonomies&lt;/span&gt;]
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;category&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;categories&amp;#39;&lt;/span&gt;
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;tag&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;tags&amp;#39;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Si se quiere deshabilitar:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;disableKinds&lt;/span&gt; = [&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;taxonomy&amp;#39;&lt;/span&gt;, &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#39;term&amp;#39;&lt;/span&gt;]
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;En &lt;strong&gt;frontmatter&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-yaml&#34; data-lang=&#34;yaml&#34;&gt;&lt;span style=&#34;color:#f92672&#34;&gt;categories&lt;/span&gt;:
+- &lt;span style=&#34;color:#ae81ff&#34;&gt;Personal&lt;/span&gt;
+- &lt;span style=&#34;color:#ae81ff&#34;&gt;Trabajo&lt;/span&gt;
+&lt;span style=&#34;color:#f92672&#34;&gt;tags&lt;/span&gt;:
+- &lt;span style=&#34;color:#ae81ff&#34;&gt;software&lt;/span&gt;
+- &lt;span style=&#34;color:#ae81ff&#34;&gt;html&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;práctica&#34;&gt;Práctica&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Ahora practica tú &lt;/h4&gt;
+
+    &lt;p&gt;😀&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Establece un contenido para tu sitio web.
+Para ello debes de tener clara las secciones y en cada sección los ficheros contenidos
+Por ejemplo podría ser parte  del contenido de este curso visto anteriormente&lt;/li&gt;
+&lt;/ul&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code class=&#34;language-markmap&#34; data-lang=&#34;markmap&#34;&gt;# content_ (directorio raíz base)
+## Introducción 
+### _index.md
+### conceptos_generales.md
+### arquitectura_web.md
+### instalación.md
+## Static
+### _index.md
+### teoría.md
+#### _index.md
+#### instalacion.md
+#### temas.md
+#### contenido.md
+### Práctica
+#### _index.md
+#### practica1.md
+#### practica2.md
+## PHP
+### _index.md
+### Sintaxis.md
+### Arrays_formularios.md
+### OOP.md
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Con esto nos aparecerá  la siguiente estructura:&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;card-body px-0 pt-2 pb-0&amp;quot;&amp;gt;
+	&amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Ejemplo de contenido&lt;/p&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;p&gt;Ahora completa los ficheros con contenido (no hace falta que haya muchos, mejor que tenga sentido, que vayas realizando tu portfolio, que sea tu forma de presentarte y mostrar a los demás en qué estás trabajando, puede ser un blog, &amp;hellip;&lt;/p&gt;
+&lt;p&gt;Recuerda cómo se crean las secciones, ficheros _index y ficheros de contenido en este template&lt;/p&gt;
+&lt;p&gt;También podrías usar la estructura anterior e ir completándola con esquemas, resúmenes de los aspectos que vayas aprendiendo en el curso.&lt;/p&gt;
+&lt;p&gt;Ahora reordena todo usando el &lt;em&gt;frontmatter&lt;/em&gt;, recuerda la propiedad &lt;strong&gt;weight&lt;/strong&gt;, modifica los títulos según consideres y puedes poner una descripción.&lt;/p&gt;
+&lt;p&gt;Ve revisando como queda todo al visualizarlo en la web&lt;/p&gt;
+&lt;p&gt;Comprueba en el servidor como se ha actualizado tu sitio web&lt;/p&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Shortcode</title>
+      <link>http://certificado.infenlaces.com/docs/teoria/4_shortcode/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:53 +0200</pubDate>
+      
+      <guid>http://certificado.infenlaces.com/docs/teoria/4_shortcode/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Extensiones a markdown.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;IMPORTANTE:&lt;/strong&gt; Se usan dentro del texto &lt;strong&gt;.md&lt;/strong&gt; no en las plantillas&lt;/p&gt;
+&lt;p&gt;Doc: &lt;a href=&#34;https://gohugo.io/content-management/shortcodes&#34;&gt;https://gohugo.io/content-management/shortcodes&lt;/a&gt;&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Un shortcode es un fragmento  de código html que será renderizado dentro de un fichero md  cuando el sistema cargue o renderice dicha página de contenido
+Es una forma de dar efectos visuales y de poder tener mayor funcionalidad dentro de nuestro sitio web&lt;/p&gt;
+&lt;p&gt;Vamos a ver algunos ejemplos. Hay que remarcar, que ciertos shortcode son propios de una plantilla, pero no costaría mucho poderlos tener en otra&lt;/p&gt;
+&lt;p&gt;Los shortcode los tenemos ubicados en la carpeta del tema &lt;strong&gt;themes/nombre_tema/layouts/shorcode&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;A continuación vamos a ver alguno de ellos&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Cargar una página de redes sociales a partir de la referencia&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Supongamos que me gusta un vidoeclip de música publicado en &lt;strong&gt;youtube&lt;/strong&gt;, y la web es &lt;a href=&#34;https://www.youtube.com/watch?v=j9WyKTGAO2w&#34;&gt;https://www.youtube.com/watch?v=j9WyKTGAO2w&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Pues podría cargar ese vídeo usando el &lt;strong&gt;shortcode&lt;/strong&gt; de hugo&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;&lt;/span&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;youtube&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;j9WyKTGAO2w&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;El efecto de ponerlo es el siguiente&lt;/p&gt;
+&lt;h2 id=&#34;hahahugoshortcode-s1-hbhb&#34;&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://www.youtube.com/embed/j9WyKTGAO2w&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; allowfullscreen title=&#34;YouTube Video&#34;&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;&lt;strong&gt;Instagram&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;{{&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;lt;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;instagram&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;BWNjjyYFxVx&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;&amp;gt;&lt;/span&gt; &lt;span style=&#34;color:#75715e&#34;&gt;}}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;{{ &lt;!-- raw HTML omitted --&gt; }}&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Twitter&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Hugo 0.24 Released: Big archetype update + &lt;a href=&#34;https://twitter.com/Netlify?ref_src=twsrc%5Etfw&#34;&gt;@Netlify&lt;/a&gt; _redirects etc. file support&lt;a href=&#34;https://t.co/X94FmYDEZJ&#34;&gt;https://t.co/X94FmYDEZJ&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/gohugo?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#gohugo&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; &lt;a href=&#34;https://twitter.com/spf13?ref_src=twsrc%5Etfw&#34;&gt;@spf13&lt;/a&gt; &lt;a href=&#34;https://twitter.com/bepsays?ref_src=twsrc%5Etfw&#34;&gt;@bepsays&lt;/a&gt;&lt;/p&gt;&amp;mdash; GoHugo.io (@GoHugoIO) &lt;a href=&#34;https://twitter.com/GoHugoIO/status/877500564405444608?ref_src=twsrc%5Etfw&#34;&gt;June 21, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Resultado
+&lt;blockquote class=&#34;twitter-tweet&#34;&gt;&lt;p lang=&#34;en&#34; dir=&#34;ltr&#34;&gt;Hugo 0.24 Released: Big archetype update + &lt;a href=&#34;https://twitter.com/Netlify?ref_src=twsrc%5Etfw&#34;&gt;@Netlify&lt;/a&gt; _redirects etc. file support&lt;a href=&#34;https://t.co/X94FmYDEZJ&#34;&gt;https://t.co/X94FmYDEZJ&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/gohugo?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#gohugo&lt;/a&gt; &lt;a href=&#34;https://twitter.com/hashtag/golang?src=hash&amp;amp;ref_src=twsrc%5Etfw&#34;&gt;#golang&lt;/a&gt; &lt;a href=&#34;https://twitter.com/spf13?ref_src=twsrc%5Etfw&#34;&gt;@spf13&lt;/a&gt; &lt;a href=&#34;https://twitter.com/bepsays?ref_src=twsrc%5Etfw&#34;&gt;@bepsays&lt;/a&gt;&lt;/p&gt;&amp;mdash; GoHugo.io (@GoHugoIO) &lt;a href=&#34;https://twitter.com/GoHugoIO/status/877500564405444608?ref_src=twsrc%5Etfw&#34;&gt;June 21, 2017&lt;/a&gt;&lt;/blockquote&gt;
+&lt;script async src=&#34;https://platform.twitter.com/widgets.js&#34; charset=&#34;utf-8&#34;&gt;&lt;/script&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Vimeo&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-go-html-template&#34; data-lang=&#34;go-html-template&#34;&gt;
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://player.vimeo.com/video/146022717&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;vimeo video&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;hahahugoshortcode-s5-hbhb&#34;&gt;Resultado
+
+&lt;div style=&#34;position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;&#34;&gt;
+  &lt;iframe src=&#34;https://player.vimeo.com/video/146022717&#34; style=&#34;position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;&#34; title=&#34;vimeo video&#34; webkitallowfullscreen mozallowfullscreen allowfullscreen&gt;&lt;/iframe&gt;
+&lt;/div&gt;
+&lt;/h2&gt;
+&lt;p&gt;En el caso de relearn, tenemos varios e interesantes &lt;a href=&#34;https://mcshelby.github.io/hugo-theme-relearn/shortcodes/&#34;&gt;shorcodes de relearn&lt;/a&gt;  como vamos a ver. Visita la página y pruébalos cada uno.&lt;/p&gt;
+&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;### Práctica
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Ahora practica tú &lt;/h4&gt;
+
+    Accede a la información de de &lt;a href=&#34;https://mcshelby.github.io/hugo-theme-relearn/shortcodes/&#34;&gt;shortcode de la plantilla de relearn&lt;/a&gt;
+Incluye en tu trabajo los elementos que a continuación se muestran
+1 Botones
+2 Páginas de descargas
+3 Acortar un texto con leer mas&amp;hellip;
+4 Texto remarcado como una noticia
+5 Crear gráficos con mermaid (opcional)
+6 tabs de diferentes elementos
+Si tienes alguna duda, pregunta o envía un mensaje para aclarar. Mucho mejor usa el foro
+
+&lt;/div&gt;
+&lt;/code&gt;&lt;/pre&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Personalizar la plantilla</title>
+      <link>http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/</link>
+      <pubDate>Fri, 22 Oct 2021 16:23:31 +0200</pubDate>
+      
+      <guid>http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;✅
+&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Vamos a modificar la plantilla utilizada&lt;/li&gt;
+&lt;li&gt;Siempre se podrá hacer, pero en cada plantilla de una forma&lt;/li&gt;
+&lt;li&gt;Acceder siempre a la información de la plantilla&lt;/li&gt;
+&lt;li&gt;Modificar el logo, menú, etc&lt;/li&gt;
+&lt;/ul&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;Páginas referenciadas&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;En este caso referenciamos el tema &lt;a href=&#34;https://mcshelby.github.io/hugo-theme-relearn/basics/customization/&#34;&gt;&lt;strong&gt;relearn&lt;/strong&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;qué-partes-hay-en-la-plantilla&#34;&gt;Qué partes hay en la plantilla&lt;/h2&gt;
+&lt;p&gt;Debemos identificar las partes de una plantilla. Independientemente de la plantilla utilizada podemos hablar de:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Logo&lt;/li&gt;
+&lt;li&gt;Colores usados en el estilo&lt;/li&gt;
+&lt;li&gt;Menú principal
+Identifiquemos esos elementos en nuestra plantilla y veamos cómo modificarlos para personalizarla a nuestro gusto.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;En la imagen siguiente hemos identificado diferentes partes en la plantilla que vemos trans instalarla, sin ninguna modificación.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Partes de la plantilla&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 810px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/partes_plantilla_estilo_hu2618bd912ce5c9352d34c3a3e31c50b3_93124_800x1000_fit_box_3.png&#34; width=&#34;800&#34; height=&#34;351&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;logo&#34;&gt;Logo&lt;/h3&gt;
+&lt;p&gt;En esta plantilla, &lt;strong&gt;relearn&lt;/strong&gt;,  el logo se carga a patir de un &lt;strong&gt;partial&lt;/strong&gt;.
+La carpeta 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    partial
+
+&lt;/span&gt;
+
+, va a contener ficheros html que serán parte una  página html, de forma que los podré invocar cuando los necesite. Por ejemplo un &lt;strong&gt;footer.html&lt;/strong&gt; o un &lt;strong&gt;header.html&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fichero logo.html del partial en relearn&lt;/strong&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 229px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/partial_logo_hu1fd9ffc102a412c15178df9c4599e3a4_5713_400x600_fit_box_3.png&#34; width=&#34;219&#34; height=&#34;139&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;&lt;/p&gt;
+&lt;p&gt;En este caso la ubicación es 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    themes/layoout/partial/logo.html
+
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;Ahora lo que hay que hacer es copiar el fichero en el directorio layout y modificar incluyendo el logo que queremos que tenga, que irá ubicado en la carpeta 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    static/images
+
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ficheros para establecer nuestro logo&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 224px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/ficheros_logo_huf330ac81216e1a9fd8c846adcec22725_7525_600x700_fit_box_3.png&#34; width=&#34;214&#34; height=&#34;191&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+Modificamos el fichero actualizando al logo que queramos. En este caso el logo se rederiza a partir de un elemento &lt;em&gt;&lt;strong&gt;
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    svg
+
+&lt;/span&gt;
+&lt;/strong&gt;&lt;/em&gt;.
+Copiamos nuestro logo en la carpeta static y lo especificamos en un elemento 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    img
+
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;p&gt;Para ello hacemos un diseño de logo. &lt;a href=&#34;https://www.logaster.com.es/logo/&#34;&gt;(hay muchas web gratuitas para ello)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Luego modificamos el fichero 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    logo.html
+
+&lt;/span&gt;
+ y sustituimos el elemento 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    svg
+
+&lt;/span&gt;
+ por un elemento 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    img
+
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&amp;lt;!--Lo anterior no lo escribo ....--&amp;gt;&lt;/span&gt;
+  &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;id&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;logo&amp;#34;&lt;/span&gt;
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;href&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;{{ .Site.Params.landingPageURL | default &amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;/&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;|&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;relLangURL&lt;/span&gt; &lt;span style=&#34;color:#960050;background-color:#1e0010&#34;&gt;}}&amp;#34;&lt;/span&gt;
+            &lt;span style=&#34;color:#a6e22e&#34;&gt;style&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;              color: #3d414d;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;              font-family: &amp;#39;Novacento Sans Wide&amp;#39;, &amp;#39;Helvetica&amp;#39;, &amp;#39;Tahoma&amp;#39;, &amp;#39;Geneva&amp;#39;, &amp;#39;Arial&amp;#39;, sans-serif;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;              font-size: 30px;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;              font-weight: bold;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;              margin-top: -2px;
+&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;            &amp;#34;&lt;/span&gt;&amp;gt;
+                &amp;lt;&lt;span style=&#34;color:#f92672&#34;&gt;img&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;src&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;/images/logo.png&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;alt&lt;/span&gt;&lt;span style=&#34;color:#f92672&#34;&gt;=&lt;/span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;Logo del ciclo&amp;#34;&lt;/span&gt;&amp;gt;
+            Desarrollo Web
+          &amp;lt;/&lt;span style=&#34;color:#f92672&#34;&gt;a&lt;/span&gt;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Vemos la estructura de ficheros
+
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;&lt;strong&gt;Estructura de ficheros&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;pre&gt;&lt;code&gt;&amp;lt;div class=&amp;quot;card-body px-0 pt-2 pb-0&amp;quot;&amp;gt;
+	&amp;lt;p class=&amp;quot;card-text&amp;quot;&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+&lt;!-- raw HTML omitted --&gt;
+&lt;!-- raw HTML omitted --&gt;
+
+&lt;/div&gt;
+&lt;/p&gt;
+&lt;p&gt;Y nos quedará la página con el logo actualizado&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Sitio web con el logo actualizado&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 531px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/sitio_web_logo_hu445c1a4cfd2f31e5c187bddcc2bec9f1_41260_600x800_fit_box_3.png&#34; width=&#34;521&#34; height=&#34;423&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h3 id=&#34;menú&#34;&gt;Menú&lt;/h3&gt;
+&lt;p&gt;El menú es una sección muy importante. En esta plantilla el menú va a estar ubicado en la parte izquierda de la plantilla.
+Para añadir/modificarlo, debemos especificarlo en el fichero 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    config.toml
+
+&lt;/span&gt;
+, añádiendo los elementos 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    [[menu.shortcuts]]
+
+&lt;/span&gt;
+, para cada item que queremos añadir.
+Por ejemplo, vamos a añadir 3 items&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;shortcuts&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;i class=&amp;#39;fab fa-php&amp;#39;&amp;gt;&amp;lt;/i&amp;gt;   Lenguaje php&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;identified&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://php.net&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt;=&lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;shortcuts&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;i class=&amp;#39;fab fa-wikipedia-w&amp;#39;&amp;gt;&amp;lt;/i&amp;gt;   Wiki del curso&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;identified&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;https://es.wikieducator.org/Usuario:ManuelRomero/ProgramacionWeb/Contenido&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt;=&lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt;
+
+[[&lt;span style=&#34;color:#a6e22e&#34;&gt;menu&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;shortcuts&lt;/span&gt;]]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;name&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;i class=&amp;#39;far fa-question-circle&amp;#39;&amp;gt;&amp;lt;/i&amp;gt;   Ejercicios resueltos&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;identified&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;url&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://manuel.infenlaces.com/dwes/ejercicios/&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;weight&lt;/span&gt;=&lt;span style=&#34;color:#ae81ff&#34;&gt;3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Y vemos cómo se genera el menú en la parte izquierda&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Menú principal ubicado en la parte izquierda&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 299px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/menu_izquierdo_hu9aed07490b4fdde8619e71692841e94e_7922_400x600_fit_box_3.png&#34; width=&#34;289&#34; height=&#34;133&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+
+
+&lt;div class=&#34;alert alert-warning&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Observa insertar icono&lt;/h4&gt;
+
+    Hugo integra los iconos &lt;a href=&#34;https://fontawesome.com/v5.15/icons?d=gallery&amp;amp;p=2&amp;amp;m=free&#34;&gt;fab awesome&lt;/a&gt; que son free, utilízalos para tener mejor visualización de tu sitio
+
+&lt;/div&gt;
+
+&lt;p&gt;El título del menú se coge del fichero de traducción ubicado en &lt;strong&gt;theme/relearn/i18n/xx.toml&lt;/strong&gt;, donde xx es el idioma establecido.
+Posteriormente veremos el tema de traducción y abordaremos esta cuestión&lt;/p&gt;
+&lt;p&gt;El parámetro que establece la traducción para este título de menú es el siguiente que estableceremos en &lt;strong&gt;/i18n/es.toml&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-html&#34; data-lang=&#34;html&#34;&gt;[Shortcuts-Title]
+other = &amp;#34;Más opciones&amp;#34;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Debemos también establecer el idioma por defecto en el fichero de configuración &lt;strong&gt;config.toml&lt;/strong&gt;&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;&lt;span style=&#34;color:#a6e22e&#34;&gt;defaultContentLanguage&lt;/span&gt;=&lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;es&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;&lt;strong&gt;Menú con título establecido&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 311px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/menu_titulo_hubdf966f388f8ef5573ea5690c49b3e76_38419_500x600_fit_box_3.png&#34; width=&#34;301&#34; height=&#34;471&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+
+&lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h3 id=&#34;estilo&#34;&gt;Estilo&lt;/h3&gt;
+&lt;p&gt;Esta plantilla tiene hasta tres estilos de colores diferentes preparados. Para utilizarlos basta con establecer el valor correspondiente de la variable 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    themeVariant
+
+&lt;/span&gt;
+ en el fichero de configuración 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    config.toml
+
+&lt;/span&gt;
+. Los valores permitidos son 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    red, green, blue
+
+&lt;/span&gt;
+&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;]
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;themeVariant&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;blue&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;green&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#a6e22e&#34;&gt;or&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;red&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Red&lt;/th&gt;
+&lt;th&gt;Blue&lt;/th&gt;
+&lt;th&gt;Green&lt;/th&gt;
+&lt;th&gt;Default&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;themeVariant = &amp;ldquo;red&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;themeVariant = &amp;ldquo;blue&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;themeVariant = &amp;ldquo;green&amp;rdquo;&lt;/td&gt;
+&lt;td&gt;themeVariant = &amp;quot;&amp;quot;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 210px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/style_red_hu44a35b9baba1a0cad87440f2b071c848_29719_200x300_fit_box_3.png&#34; width=&#34;200&#34; height=&#34;229&#34;&gt;
+	
+&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 210px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/style_blue_hub408e45d5e68cd8233bbea19207915f2_36047_200x300_fit_box_3.png&#34; width=&#34;200&#34; height=&#34;283&#34;&gt;
+	
+&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 210px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/style_green_hu21cec48f8bdf764b84d1d36d95f08a8f_32245_200x300_fit_box_3.png&#34; width=&#34;200&#34; height=&#34;237&#34;&gt;
+	
+&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 210px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/style_default_hu5be5d4d01981d1daf00483b3b453808f_28250_200x300_fit_box_3.png&#34; width=&#34;200&#34; height=&#34;219&#34;&gt;
+	
+&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;Modificar los colores de fondo&lt;/strong&gt;&lt;/em&gt;
+El color se carga, ya que en realidad lo que hacemos es establecer los &lt;strong&gt;css&lt;/strong&gt; concretos según el nombre. Los podemos ver en la carpeta de &lt;strong&gt;relearn&lt;/strong&gt; como muestra la figura siguiente&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Ficheros con diferentes temas&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 296px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/temas_hu2246284ea56ea70bde82682efdc900e7_5674_600x700_fit_box_3.png&#34; width=&#34;286&#34; height=&#34;200&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+ 
+ &lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;p&gt;Si copiamos el fichero en nuestra ubicación &lt;strong&gt;static/css/theme&lt;/strong&gt;También podemos crear nuestros propios ficheros css y cargarlos en nuestro proyecto, o modificar los valores de variables establecidos en el fichero de estilo css. Para ilustrar esta modificiación, copimos en nuestro directiro &lt;strong&gt;./static/css&lt;/strong&gt; el fichero de variables css y modificamos el color de fondo donde se ubica el menú que estamos trabajando, colocando otro color.
+Vamos a copiar &lt;strong&gt;/themes/relearn/static/css/theme-relearn&lt;/strong&gt;  en &lt;strong&gt;/static/css/theme-dwes.css&lt;/strong&gt;
+Ahora modificamos alguna de las variables de este tema y en el fichero de configuración especificamos que usamos este tema&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;params&lt;/span&gt;]
+  &lt;span style=&#34;color:#a6e22e&#34;&gt;themeVariant&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;dwes&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Por otro lado copiamos también el fichero &lt;strong&gt;theme.css&lt;/strong&gt; por si queremos modificar algún elemento más.
+Tras modificar dos colores de fondo bg y el color de la letra del título queda así la página&lt;/p&gt;
+&lt;p&gt;**Nuevo estilo de la página **&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 355px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/pagina_nuevo_estilo_hu42f1089f4060de63ac6b8e87517186d9_41692_800x1000_fit_box_3.png&#34; width=&#34;345&#34; height=&#34;550&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+
+ 
+ &lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h3 id=&#34;search&#34;&gt;Search&lt;/h3&gt;
+&lt;p&gt;Para modificar este botón accedemos a nuestro nuevo theme-dwes.css y modificamos las variables que afectan a search, según nuestro gusto&lt;/p&gt;
+&lt;h3 id=&#34;home&#34;&gt;Home&lt;/h3&gt;
+&lt;p&gt;Para modificar el home, debemos hacerlo desde el fichero de configuración.
+En este caso, como tenemos configurado el idioma español, para el título del menú, debemos especificar estas variables dentro de una sección de lenguaje
+Los parámetros modificados son los siguientes&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4&#34;&gt;&lt;code class=&#34;language-toml&#34; data-lang=&#34;toml&#34;&gt;[&lt;span style=&#34;color:#a6e22e&#34;&gt;Languages&lt;/span&gt;]
+[&lt;span style=&#34;color:#a6e22e&#34;&gt;Languages&lt;/span&gt;.&lt;span style=&#34;color:#a6e22e&#34;&gt;es&lt;/span&gt;]
+&lt;span style=&#34;color:#a6e22e&#34;&gt;landingPageURL&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;http://cpilosenlaces.com&amp;#34;&lt;/span&gt;
+&lt;span style=&#34;color:#a6e22e&#34;&gt;landingPageName&lt;/span&gt; = &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;&amp;lt;i class=&amp;#39;fas fa-university&amp;#39;&amp;gt;&amp;lt;/i&amp;gt; CPI Los Enlaces&amp;#34;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Si no hubiéramos configurado el idioma, no sería necesaria la sección&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Estilo de la página con el home modificado&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 321px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/pagina_home_modificado_huc0b89549bbb30516b72a3876181a12ed_41865_900x1000_fit_box_3.png&#34; width=&#34;311&#34; height=&#34;542&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+ 
+ &lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h3 id=&#34;footer&#34;&gt;footer&lt;/h3&gt;
+&lt;p&gt;El footer es esta plantilla, corresponde a un partial, por lo que tendríamos que acceder a él, copiarlo en nuestro directorio  y modificarlo.
+El fichero  que muestra el footer en la parte del menú se llama 
+&lt;span class=&#34;font-weight-bold text-warning&#34;&gt;
+
+    menu-footer.html
+
+&lt;/span&gt;
+
+Una pequeña modificación y observamos la actualización en la página&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Footer del  menú modificado&lt;/strong&gt;&lt;/p&gt;
+&lt;hr&gt;
+
+
+
+
+
+
+
+&lt;div class=&#34;card rounded p-2 td-post-card mb-4 mt-4&#34; style=&#34;max-width: 289px&#34;&gt;
+	&lt;img class=&#34;card-img-top&#34; src=&#34;http://certificado.infenlaces.com/docs/teoria/5_estilo_plangilla/actualizado_footer_menu_hu2fb29ad6ce736fa35f4db07a3e5beb2e_39589_700x900_fit_box_3.png&#34; width=&#34;279&#34; height=&#34;534&#34;&gt;
+	
+	&lt;div class=&#34;card-body px-0 pt-2 pb-0&#34;&gt;
+		&lt;p class=&#34;card-text&#34;&gt;
+ 
+ &lt;/p&gt;
+	&lt;/div&gt;
+	
+&lt;/div&gt;
+&lt;h3 id=&#34;práctica&#34;&gt;Práctica&lt;/h3&gt;
+
+
+&lt;div class=&#34;alert alert-success&#34; role=&#34;alert&#34;&gt;
+&lt;h4 class=&#34;alert-heading&#34;&gt;Ahora practica tú&lt;/h4&gt;
+
+    &lt;p&gt;😃
+&lt;strong&gt;Modifica la plantilla según se ha visto en este tema&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;Cambia el logo.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Establece otros colores según consideres.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Añade un menú principal&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Que tenga 4 opciones al menos&lt;/li&gt;
+&lt;li&gt;Establece icono de fan awesome&lt;/li&gt;
+&lt;li&gt;Establece un título para ese menú&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Modifica el footer de la página.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Crear Sitios Estáticos</title>
+      <link>http://certificado.infenlaces.com/docs/teoria/instalacion/</link>
+      <pubDate>Wed, 15 Sep 2021 00:00:00 +0000</pubDate>
+      
+      <guid>http://certificado.infenlaces.com/docs/teoria/instalacion/</guid>
+      <description>
+        
+        
+        
+      </description>
+    </item>
+    
+  </channel>
+</rss>

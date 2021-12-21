@@ -2,12 +2,14 @@
 title: "Primera tarea"
 date: 2017-01-05
 weight: 2
+type  : new
+layout : 'learn'
 description: >
   
 ---
+# hola
 
-
-<h1>Hola</h1>
+{{< youtube VpGlTrLK36U >}}
 
 {{% pageinfo %}}
 Escritura de texto en markdown
