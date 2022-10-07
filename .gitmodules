@@ -10,3 +10,9 @@
 [submodule "themes/relearn"]
 	path = themes/relearn
 	url = https://github.com/theNewDynamic/gohugo-theme-ananke.git
+[submodule "main/themes/syna"]
+	path = main/themes/syna
+	url = https://git.okkur.org/syna
+[submodule "ejemplo/hugo-theme-relearn"]
+	path = ejemplo/hugo-theme-relearn
+	url = https://github.com/McShelby/hugo-theme-relearn.git

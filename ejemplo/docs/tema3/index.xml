@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tema3 on Hugo Relearn Theme</title>
+    <link>http://example.org/tema3/</link>
+    <description>Recent content in Tema3 on Hugo Relearn Theme</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 04 Oct 2022 08:08:35 +0200</lastBuildDate><atom:link href="http://example.org/tema3/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Lenguaje_php</title>
+      <link>http://example.org/tema3/lenguaje_php/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://example.org/tema3/lenguaje_php/</guid>
+      <description>PHP Lenguaje interpretado que hay que instalar y usar Es muy sencillo. Es orientado a expresiones y de tipado dinámico</description>
+    </item>
+    <item>
+      <title>Listado</title>
+      <link>http://example.org/tema3/listado/</link>
+      <pubDate>Tue, 04 Oct 2022 08:08:35 +0200</pubDate>
+      <guid>http://example.org/tema3/listado/</guid>
+      <description>Listado de películas </description>
+    </item>
+  </channel>
+</rss>

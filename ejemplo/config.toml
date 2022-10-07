@@ -1,0 +1,65 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = "relearn"
+
+
+
+[params]
+themeVariant="neon"
+variable = "hola caracola"
+
+
+[Languages]
+  [Languages.en]
+    title = "Hugo Relearn Theme"
+    weight = 1
+    languageName = "English"
+    landingPageURL = "/"
+    landingPageName = "<i class='fas fa-home'>https://cpilosenlaces.com/</i> CPIFP Los Enlaces"
+
+  [[Languages.en.menu.shortcuts]]
+    name = "<i class='fab fa-fw fa-github'></i> Manuel's GIT"
+    identifier = "ds"
+    url = "https://github.com/MAlejandroR"
+    weight = 10
+
+  [[Languages.en.menu.shortcuts]]
+    name = "<i class='fas fa-fw fa-camera'></i> Wikieducator Page"
+    url = "https://es.wikieducator.org/Usuario:ManuelRomero"
+    weight = 11
+[Languages.es]
+    title = "Tema hecho con Hugo"
+    weight = 1
+    languageName = "Español"
+    landingPageURL = "/"
+    landingPageName = "<i class='fas fa-home'>https://cpilosenlaces.com/</i> CPIFP Los Enlaces"
+
+  [[Languages.es.menu.shortcuts]]
+    name = "<i class='fab fa-fw fa-github'></i>Git de manuel"
+    identifier = "ds"
+    url = "https://github.com/MAlejandroR"
+    weight = 10
+
+  [[Languages.es.menu.shortcuts]]
+    name = "<i class='fas fa-fw fa-camera'></i>Página de  Wikieducator"
+    url = "https://es.wikieducator.org/Usuario:ManuelRomero"
+    weight = 11
+[Languages.fr]
+    title = "Hugo réapprendre le thème"
+    weight = 1
+    languageName = "Français"
+    landingPageURL = "/"
+    landingPageName = "<i class='fas fa-home'>https://cpilosenlaces.com/</i> CPIFP Los Enlaces"
+
+  [[Languages.fr.menu.shortcuts]]
+    name = "<i class='fab fa-fw fa-github'></i> La page git de manuel"
+    identifier = "ds"
+    url = "https://github.com/MAlejandroR"
+    weight = 10
+
+  [[Languages.fr.menu.shortcuts]]
+    name = "<i class='fas fa-fw fa-camera'></i>La page  Wikieducator"
+    url = "https://es.wikieducator.org/Usuario:ManuelRomero"
+    weight = 11
+
