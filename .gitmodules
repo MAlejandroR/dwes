@@ -16,3 +16,6 @@
 [submodule "ejemplo/hugo-theme-relearn"]
 	path = ejemplo/hugo-theme-relearn
 	url = https://github.com/McShelby/hugo-theme-relearn.git
+[submodule "mario/themes/shadocs"]
+	path = mario/themes/shadocs
+	url = https://github.com/jgazeau/shadocs.git
