@@ -1,6 +1,6 @@
 #baseURL = 'http://proyectosdwa.es/manuel'
-#baseURL = 'http://web.infenlaces.com/dwes/docker/'
-baseURL = 'http://localhost/'
+baseURL = 'http://web.infenlaces.com/dwes/'
+#baseURL = 'http://localhost/'
 # theme= 'docsy'
 
 
