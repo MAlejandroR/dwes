@@ -3,6 +3,7 @@ title: "Contenido"
 date: 2021-10-04T13:19:24+02:00
 draft: false
 weight: 23
+icon: fas fa-pencil-alt
 description: "Dotar a nuestro sitio de contenido para publicar"
 ---
 {{% pageinfo %}}

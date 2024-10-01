@@ -3,6 +3,7 @@ title: "Uso básico de git"
 date: 2021-10-04T13:19:24+02:00
 draft: false
 weight: 23
+icon: fab fa-git-alt
 description: "Usar git a nivel básico (crear repositorio y utilizarlo"
 ---
 {{% pageinfo %}}

@@ -46,7 +46,7 @@ Hugo ofrece varias opciones para usar temas. Normalmente cada  tema es compatibl
 >Si prefieres no depender de un repositorio externo, puedes clonar los archivos del tema directamente en tu proyecto. Esto es útil si deseas personalizar el tema o tu despliegue requiere que el tema esté dentro de tu repositorio.
 
 #### Clonar los archivos
-*Es interesante para tener los ficheros originales por si queremos hacer cambios o adaptaciones, aunque no sea la forma de cargar la plantill (recomendado hacerlo con módulos)
+* Es interesante para tener los ficheros originales por si queremos hacer cambios o adaptaciones, aunque no sea la forma de cargar la plantill (recomendado hacerlo con módulos)
 
 Las plantillas deben de ubicarse en el directorio **{{<color_green>}}themes{{</color_green>}}**
 
@@ -54,6 +54,7 @@ Las plantillas deben de ubicarse en el directorio **{{<color_green>}}themes{{</c
 cd themes
 git clone https://github.com/McShelby/hugo-theme-relearn.git relearn
 ````
+
 {{< alert title="Git" color="warning" >}}
 Usar Git es fundamental.    
 
@@ -75,7 +76,7 @@ Ahora ya podemos ver un despliegue del sitio web. Para ello invocamos al {{<colo
 hugo server &
 ```
 
-{{< alert title="Observación" color="warning" >}}
+{{< alert title="Solo Linux " color="warning" >}}
 el ***&*** es para ejecutar el comando en backgroud y no bloquear el terminal. Solo para linux
 {{< /alert >}}
 
@@ -87,8 +88,53 @@ Nos abrirá un puerto en el navegador según nos muestre la salida en el termina
 Página inicial
 {{< /imgproc >}}
 
-Dependiendo del tema, habrá un contenido u otro. Este tema en concreto nos muestra el contenido de una página **themes/relearn/layouts/index.html**. 
+Dependiendo del tema, habrá un contenido u otro. Este tema en concreto nos muestra el contenido de una página **themes/relearn/layouts/partial/initial.md**. 
 Si quisiéramos cambiar el contenido de la página, en lugar de cambiar el fichero, lo que haríamos es copiar el fichero en la carpeta **layout** del directorio del proyecto. volveremos a esto más adelante.
+
+### Añadir módulo de hugo
+Usamos el comando para crear go.mod, donde se especifica el módulo a añadir
+```bash
+hugo mod init localhost
+```
+Localhost sería el servidor dónde vamos a ubicar el despliegue de nuestro proyecto  
+
+Añadimos el módulo en nuestro fichero de configuración **hugo.toml**
+```toml
+
+[modulo]
+  [[module.imports]]
+          path = 'github.com/McShelby/hugo-theme-relearn'
+```
+
+Ahora ordemaos y descargamos el módulo haciéndolo disponible en nuestro proyecto
+```bash
+hugo mod tidy
+````
+Ya podemos levatar el servidor para verlo
+```bash
+hugo server 
+```
+{{< alert title="Observa" color="warning" >}}
+cómo se modifica el fichero **go.mod**
+{{< /alert >}}
+### Anadir un submódulo
+* *Especialmente útil si vamos a desarrollar y desplegar nuestro proyecto en Git.**
+
+*Iniciamos nuestro proyecto en git
+```bash
+git init
+```
+
+Añadimos el submódulo del tema
+```bash
+git submodule add --depth 1 https://github.com/McShelby/hugo-theme-relearn.git themes/hugo-theme-relearn
+```
+
+Y ahora lo especificamos en el fichero de configuración ***hugo.toml***.
+```tolm
+theme = 'hugo-theme-relearn'
+```
+
 ### Práctica
 {{< alert title="Ahora practica tú " color="success" >}}
 :grinning:
@@ -97,5 +143,9 @@ Si quisiéramos cambiar el contenido de la página, en lugar de cambiar el fiche
 * Ejecuta el comando de hugo para abrir un puerto en local
 
 * Visualiza tu proyecto en el servidor
+ 
+* Modifica el contenido de la página inicial
+ 
+* Prueba a instalar el thema de las tres formas posibles
 
 {{< /alert >}}

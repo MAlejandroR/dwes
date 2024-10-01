@@ -2,6 +2,7 @@
 title: "Personalizar la plantilla"
 date: 2021-10-22T16:23:31+02:00   
 draft: false
+icon: fas fa-tools
 description: "Cómo modificar y personalizar la plantilla o tema"
 weight: 25
 ---
