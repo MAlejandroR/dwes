@@ -22,7 +22,7 @@ Todo esto, está hecho con el :heart: :smile:
 * Instala, configura y agrega contenidos usando una plantilla.
 {{% /pageinfo %}}
   
- ![funcionamiento](/images/funcionamiento.png)
+ ![funcionamiento](images/funcionamiento.png)
 
 #### ¿Por qué un generador de sitios estáticos?
 * Rapidez

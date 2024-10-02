@@ -13,6 +13,7 @@ description: >
 **Objetivos**
 
 * Aprenderemos a instalar *hugo* y crear un **nuevo sitio web**
+* :smile: qué bonito *es*
 * No olvides, si se necesita, configurar el **path** del sistema para acceder desde cualquier invocación
 * Gestionamos todo desde un **terminal** independientemente de usar linux o windows
 * Verifica la versión instalada

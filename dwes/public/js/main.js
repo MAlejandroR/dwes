@@ -6409,7 +6409,7 @@ limitations under the License.
           }
 
           var query = $(this).val();
-          var searchPage = 'http://localhost:33745/dwes/search/?q=' + query;
+          var searchPage = 'http://localhost:1313/dwes/search/?q=' + query;
           document.location = searchPage;
 
           return false;
