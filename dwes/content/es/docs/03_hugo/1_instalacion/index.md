@@ -132,7 +132,7 @@ hugo  new site <nombre_del_sitio >
 ```
 La instalación nos da información de que se ha creado el sitio nuevo y de los pasos a realizar para continuar con nuestro nuevo sitio web:
 
-![instalacion_hugo.png](instalacion_hugo.png)
+![instalacion_hugo.png](images/instalacion_hugo.png)
 
 Una vez que creamos un sitio nuevo, observamos {{<color_green>}}que se crea una carpeta o directorio con el nombre del sitio creado{{</color_green>}}.
 
