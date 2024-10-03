@@ -22,13 +22,30 @@ description: "Dotar a nuestro sitio de contenido para publicar"
 
 
 # Contenido
-Ahora que tenemos una plantilla, queda lo principal, que es aportar contenido a nuestro sitio web.
-Son sitios estáticos, por lo que nuestro objetivo es aportar ficheros de texto con datos, información, imágenes, efectos visuales para que sean publicados en la web.
-La idea va a ser aportar ficheros en formato [markdown]() cuyo contenido queremos 
+Ahora que tenemos una plantilla, queda lo principal, que es {{<color_green color="danger">}}aportar contenido a nuestro sitio web.{{</color_green>}}
+{{<color_green>}}{{</color_green>}}
+
+Son sitios estáticos, por lo que nuestro objetivo es aportar {{<color_green>}}ficheros de texto con datos, información, imágenes, efectos visuales{{</color_green>}} para que sean publicados en la web.
+
+La idea va a ser aportar {{<color_green>}}ficheros en formato [markdown]() {{</color_green>}}cuyo contenido queremos  renderizar.
+
 ## ¿Qué estructura tiene el contenido de las páginas?
-* Ahora toca aportar contenido a nuestro sitio web. Las páginas Tipos de páginas de contenido. Agrupar las páginas por tipos.
-* En Hugo el contenido se organiza como luego se va a ver en la web. Anidamos el contenido en subdirectorios (**secciones**): `content/<directorios>`
-* Pensar en **front-matter** - **archetypes**
+{{< alert title="Organizando contenidos" color="warning" >}}
+**Esto implica una organización**    
+> No podemos poner páginas sin mas.
+{{< /alert >}} 
+* En Hugo el contenido {{<color_green>}}se organiza como luego se va a ver{{</color_green>}} en la web. 
+ 
+* Anidamos el contenido {{<color_green>}}en subdirectorios (**secciones**){{</color_green>}} (directorios serán carpetas que iremos creando) :
+```bash
+  content/directorios
+  ```
+* Cada página de contenido va a tener  en la parte superior una zona especial, llamada {{<color_green>}}[front-matter](https://gohugo.io/content-management/front-matter/){{</color_green>}} 
+* Cada página se creará siguiendo un patrón o modelo especificado en la carpeta {{<color_green>}}[archetypes](https://gohugo.io/content-management/archetypes/){{</color_green>}}
+ {{< imgproc archtype Fill "300x100" >}}
+ 
+ {{< /imgproc >}}
+ 
 * Plantillas específicas para cada modelo
 
 ## Creando contenido: markdown
@@ -227,6 +244,10 @@ tags:
 - software
 - html
 ```
+# Markdown
+
+* Muy importante
+ 
 ### Práctica
 {{< alert title="Ahora practica tú " color="success" >}}
 :grinning:

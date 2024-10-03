@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=42957&amp;path=dwes/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
@@ -22,7 +22,7 @@
 Sintaxis básica de las plantillas en Hugo Organización de las plantillas. Directorio layout Modificación de una plantilla Creación de plantillas Documentación: https://gohugo.io/templates/
 Sintaxis básica Un plantilla es una página html donde utilizando una notación especial, vamos a poder incluir elementos que vamos a partir de un lenguaje de programación y las variable que gestione.
 Las variables las podríamos declarar y asignar dentro de esas secciones de código, o bien, recuperarlas de las declaradas y asignadas en los ficheros de configuración como es config.toml con el que estamos trabajando constantemete fini&gt;">
-<meta property="og:url" content="http://web.infenlaces.com/dwes/es/docs/03_hugo/7_plantillas/">
+<meta property="og:url" content="http://localhost:42957/dwes/es/docs/03_hugo/7_plantillas/">
   <meta property="og:site_name" content="Desarrollo Web">
   <meta property="og:title" content="Plantillas ">
   <meta property="og:description" content=" Algunas notas sobre el trabajo con las plantillas:
@@ -53,8 +53,8 @@ Las variables las podríamos declarar y asignar dentro de esas secciones de cód
 
 
 
-<link rel="preload" href="/dwes/scss/main.min.452bc41721a1ac7a14559b3971a324e594b26003ab9be04fb2e608f5d013897a.css" as="style">
-<link href="/dwes/scss/main.min.452bc41721a1ac7a14559b3971a324e594b26003ab9be04fb2e608f5d013897a.css" rel="stylesheet" integrity="">
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -184,10 +184,17 @@ Las variables las podríamos declarar y asignar dentro de esas secciones de cód
   <input type="checkbox" id="m-dwesesdocs03_hugo2_temas-check"/>
   <label for="m-dwesesdocs03_hugo2_temas-check"><a href="/dwes/es/docs/03_hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="">Temas o layouts base</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenido-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo3_contenido-li">
   <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido-check"/>
-  <label for="m-dwesesdocs03_hugo3_contenido-check"><a href="/dwes/es/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
+  <label for="m-dwesesdocs03_hugo3_contenido-check"><a href="/dwes/es/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
   
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenidocreacion-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenidocreacion-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenidocreacion-check"><a href="/dwes/es/docs/03_hugo/3_contenido/creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenidocreacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li>
+  </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_git-li">
   <input type="checkbox" id="m-dwesesdocs03_hugo3_git-check"/>
   <label for="m-dwesesdocs03_hugo3_git-check"><a href="/dwes/es/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
@@ -528,8 +535,26 @@ En este caso puedes porbar a crear una plantilla personal  y mostrarla
 </footer>
 
     </div>
-    <script src="/dwes/js/main.min.5147d5c57c26605bd450ea5c7db2356c38ce9ec73109e7882adb50275732ce4b.js" integrity="sha256-UUfVxXwmYFvUUOpcfbI1bDjOnscxCeeIKttQJ1cyzks=" crossorigin="anonymous"></script>
-<script defer src="/dwes/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/dwes/js/tabpane-persist.js'></script>
 
   </body>

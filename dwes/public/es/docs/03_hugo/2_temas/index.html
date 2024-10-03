@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=42957&amp;path=dwes/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
@@ -19,7 +19,7 @@
 
 <title>Temas o layouts base | Desarrollo Web</title>
 <meta name="description" content="Utilización de layouts o platillas html para visualizar el contenido">
-<meta property="og:url" content="http://web.infenlaces.com/dwes/es/docs/03_hugo/2_temas/">
+<meta property="og:url" content="http://localhost:42957/dwes/es/docs/03_hugo/2_temas/">
   <meta property="og:site_name" content="Desarrollo Web">
   <meta property="og:title" content="Temas o layouts base">
   <meta property="og:description" content="Utilización de layouts o platillas html para visualizar el contenido">
@@ -41,8 +41,8 @@
 
 
 
-<link rel="preload" href="/dwes/scss/main.min.452bc41721a1ac7a14559b3971a324e594b26003ab9be04fb2e608f5d013897a.css" as="style">
-<link href="/dwes/scss/main.min.452bc41721a1ac7a14559b3971a324e594b26003ab9be04fb2e608f5d013897a.css" rel="stylesheet" integrity="">
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -172,10 +172,17 @@
   <input type="checkbox" id="m-dwesesdocs03_hugo2_temas-check" checked/>
   <label for="m-dwesesdocs03_hugo2_temas-check"><a href="/dwes/es/docs/03_hugo/2_temas/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="td-sidebar-nav-active-item">Temas o layouts base</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenido-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-dwesesdocs03_hugo3_contenido-li">
   <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido-check"/>
-  <label for="m-dwesesdocs03_hugo3_contenido-check"><a href="/dwes/es/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
+  <label for="m-dwesesdocs03_hugo3_contenido-check"><a href="/dwes/es/docs/03_hugo/3_contenido/" class="align-left ps-0  td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="">Contenido</span></a></label>
   
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenidocreacion-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenidocreacion-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenidocreacion-check"><a href="/dwes/es/docs/03_hugo/3_contenido/creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenidocreacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li>
+  </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_git-li">
   <input type="checkbox" id="m-dwesesdocs03_hugo3_git-check"/>
   <label for="m-dwesesdocs03_hugo3_git-check"><a href="/dwes/es/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
@@ -290,31 +297,37 @@ Usaremos la plantilla <a href="https://themes.gohugo.io/themes/hugo-theme-relear
 <h2 id="instalar-una-plantilla">Instalar una plantilla</h2>
 <p>Hugo ofrece varias opciones para usar temas. Normalmente cada  tema es compatible con ella:</p>
 
-<span class="font-weight-bold text-success">
+<strong>
+<span class="font-weight-bold text-primary">
 
     Añadir el tema como un Módulo de Hugo
 
 </span>
+</strong>
 
 <blockquote>
 <p>Es la forma más simple y moderna. Hugo descarga los archivos del tema desde el repositorio de Docsy en la versión que elijas, y es fácil mantener el tema actualizado. El sitio de ejemplo de Docsy usa esta opción.</p>
 </blockquote>
 
-<span class="font-weight-bold text-success">
+<strong>
+<span class="font-weight-bold text-primary">
 
     Añadir el tema como un submódulo de Git
 
 </span>
+</strong>
 
 <blockquote>
 <p>Permite usar los archivos del tema desde su propio repositorio, pero es más complicado de mantener que los módulos de Hugo. Se utilizaba en versiones antiguas del sitio de ejemplo de Docsy, pero sigue siendo compatible.</p>
 </blockquote>
 
-<span class="font-weight-bold text-success">
+<strong>
+<span class="font-weight-bold text-primary">
 
     Clonar los archivos del tema
 
 </span>
+</strong>
 
 <blockquote>
 <p>Si prefieres no depender de un repositorio externo, puedes clonar los archivos del tema directamente en tu proyecto. Esto es útil si deseas personalizar el tema o tu despliegue requiere que el tema esté dentro de tu repositorio.</p>
@@ -324,11 +337,13 @@ Usaremos la plantilla <a href="https://themes.gohugo.io/themes/hugo-theme-relear
 <li>Es interesante para tener los ficheros originales por si queremos hacer cambios o adaptaciones, aunque no sea la forma de cargar la plantill (recomendado hacerlo con módulos)</li>
 </ul>
 <p>Las plantillas deben de ubicarse en el directorio <strong>
-<span class="font-weight-bold text-success">
+<strong>
+<span class="font-weight-bold text-primary">
 
     themes
 
 </span>
+</strong>
 </strong></p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#658b00">cd</span> themes
 </span></span><span style="display:flex;"><span>git clone https://github.com/McShelby/hugo-theme-relearn.git relearn
@@ -484,8 +499,26 @@ Si quisiéramos cambiar el contenido de la página, en lugar de cambiar el fiche
 </footer>
 
     </div>
-    <script src="/dwes/js/main.min.5147d5c57c26605bd450ea5c7db2356c38ce9ec73109e7882adb50275732ce4b.js" integrity="sha256-UUfVxXwmYFvUUOpcfbI1bDjOnscxCeeIKttQJ1cyzks=" crossorigin="anonymous"></script>
-<script defer src="/dwes/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/dwes/js/tabpane-persist.js'></script>
 
   </body>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Contenido on Desarrollo Web</title>
+    <link>http://localhost:42957/dwes/es/docs/03_hugo/3_contenido/</link>
+    <description>Recent content in Contenido on Desarrollo Web</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 04 Oct 2021 13:19:24 +0200</lastBuildDate>
+    <atom:link href="http://localhost:42957/dwes/es/docs/03_hugo/3_contenido/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Añadiendo</title>
+      <link>http://localhost:42957/dwes/es/docs/03_hugo/3_contenido/creacion/</link>
+      <pubDate>Mon, 04 Oct 2021 13:19:24 +0200</pubDate>
+      <guid>http://localhost:42957/dwes/es/docs/03_hugo/3_contenido/creacion/</guid>
+      <description>&lt;h2 id=&#34;creando-contenido-markdown&#34;&gt;Creando contenido: markdown&lt;/h2&gt;&#xA;&lt;p&gt;Para crear nuevo contenido vamos  a generar páginas de texto con formato &lt;strong&gt;markdown&lt;/strong&gt; &lt;a href=&#34;http://localhost:42957/dwes/dwes/es/docs/03_hugo/3_contenido/creacion/#markdown&#34;&gt;&lt;em&gt;(Hablamos más abajo sobre el tema)&lt;/em&gt;&lt;/a&gt;&#xA;Podemos consultar las siguientes referencias para el texto en markdown:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://daringfireball.net/projects/markdown/&#34;&gt;Daring Fireball: Markdown, John Gruber (Creator of Markdown)&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;Markdown Cheatsheet, Adam Pritchard&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.markdowntutorial.com/&#34;&gt;Markdown Tutorial (Interactive), Garen Torikian&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://www.markdownguide.org/&#34;&gt;The Markdown Guide, Matt Cone&lt;/a&gt;&#xA;&lt;strong&gt;Otras referencias&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&#34;&gt;https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;https://programminghistorian.org/es/lecciones/introduccion-a-markdown&#34;&gt;https://programminghistorian.org/es/lecciones/introduccion-a-markdown&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Este metalenguaje o lenguaje con marcas &#xA;&lt;strong&gt;&#xA;&lt;span class=&#34;font-weight-bold text-primary&#34;&gt;&#xA;&#xA;    es muy utilizado en la documentación técnica&#xA;&#xA;&lt;/span&gt;&#xA;&lt;/strong&gt;&#xA;.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

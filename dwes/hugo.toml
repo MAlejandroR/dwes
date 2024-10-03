@@ -150,6 +150,17 @@ algolia_docsearch = false
       path = "github.com/google/docsy/dependencies"
      disable = false
 
+
+
+# Para crear gráficos direccionales
+[params.markmap]
+    enable = true
+
+#Parámetros para que trabaje mermaid
+ [params.mermaid]
+enable = true
+
+
 # Para rederizar el html en md, y dentro de shortcode
 [markup]
   [markup.goldmark]

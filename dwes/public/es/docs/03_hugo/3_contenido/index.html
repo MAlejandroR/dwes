@@ -1,9 +1,10 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head>
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=42957&amp;path=dwes/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="index, follow">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:42957/dwes/es/docs/03_hugo/3_contenido/index.xml">
+<meta name="robots" content="noindex, nofollow">
 
 
 <link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
@@ -19,21 +20,18 @@
 
 <title>Contenido | Desarrollo Web</title>
 <meta name="description" content="Dotar a nuestro sitio de contenido para publicar">
-<meta property="og:url" content="http://web.infenlaces.com/dwes/es/docs/03_hugo/3_contenido/">
+<meta property="og:url" content="http://localhost:42957/dwes/es/docs/03_hugo/3_contenido/">
   <meta property="og:site_name" content="Desarrollo Web">
   <meta property="og:title" content="Contenido">
   <meta property="og:description" content="Dotar a nuestro sitio de contenido para publicar">
   <meta property="og:locale" content="es">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="docs">
-    <meta property="article:published_time" content="2021-10-04T13:19:24+02:00">
-    <meta property="article:modified_time" content="2021-10-04T13:19:24+02:00">
+  <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Contenido">
   <meta itemprop="description" content="Dotar a nuestro sitio de contenido para publicar">
   <meta itemprop="datePublished" content="2021-10-04T13:19:24+02:00">
   <meta itemprop="dateModified" content="2021-10-04T13:19:24+02:00">
-  <meta itemprop="wordCount" content="1355">
+  <meta itemprop="wordCount" content="1383">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Contenido">
   <meta name="twitter:description" content="Dotar a nuestro sitio de contenido para publicar">
@@ -41,8 +39,8 @@
 
 
 
-<link rel="preload" href="/dwes/scss/main.min.452bc41721a1ac7a14559b3971a324e594b26003ab9be04fb2e608f5d013897a.css" as="style">
-<link href="/dwes/scss/main.min.452bc41721a1ac7a14559b3971a324e594b26003ab9be04fb2e608f5d013897a.css" rel="stylesheet" integrity="">
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -50,7 +48,7 @@
   crossorigin="anonymous"></script>
 
   </head>
-  <body class="td-page">
+  <body class="td-section">
     <header>
       <nav class="td-navbar js-navbar-scroll" data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row">
@@ -172,10 +170,17 @@
   <input type="checkbox" id="m-dwesesdocs03_hugo2_temas-check"/>
   <label for="m-dwesesdocs03_hugo2_temas-check"><a href="/dwes/es/docs/03_hugo/2_temas/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo2_temas"><i class="fa-solid fa-palette"></i><span class="">Temas o layouts base</span></a></label>
   
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-dwesesdocs03_hugo3_contenido-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-dwesesdocs03_hugo3_contenido-li">
   <input type="checkbox" id="m-dwesesdocs03_hugo3_contenido-check" checked/>
-  <label for="m-dwesesdocs03_hugo3_contenido-check"><a href="/dwes/es/docs/03_hugo/3_contenido/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="td-sidebar-nav-active-item">Contenido</span></a></label>
+  <label for="m-dwesesdocs03_hugo3_contenido-check"><a href="/dwes/es/docs/03_hugo/3_contenido/" class="align-left ps-0  active td-sidebar-link td-sidebar-link__section" id="m-dwesesdocs03_hugo3_contenido"><i class="fas fa-pencil-alt"></i><span class="td-sidebar-nav-active-item">Contenido</span></a></label>
   
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_contenidocreacion-li">
+  <input type="checkbox" id="m-dwesesdocs03_hugo3_contenidocreacion-check"/>
+  <label for="m-dwesesdocs03_hugo3_contenidocreacion-check"><a href="/dwes/es/docs/03_hugo/3_contenido/creacion/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_contenidocreacion"><i class="fas fa-file-alt"></i><span class="">Añadiendo</span></a></label>
+  
+</li>
+  </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-dwesesdocs03_hugo3_git-li">
   <input type="checkbox" id="m-dwesesdocs03_hugo3_git-check"/>
   <label for="m-dwesesdocs03_hugo3_git-check"><a href="/dwes/es/docs/03_hugo/3_git/" class="align-left ps-0  td-sidebar-link td-sidebar-link__page" id="m-dwesesdocs03_hugo3_git"><i class="fab fa-git-alt"></i><span class="">Uso básico de git</span></a></label>
@@ -233,7 +238,11 @@
         <li><a href="#front---matter">Front   matter</a></li>
       </ul>
     </li>
-    <li><a href="#taxonomías">Taxonomías</a>
+    <li><a href="#taxonomías">Taxonomías</a></li>
+  </ul>
+
+  <ul>
+    <li>
       <ul>
         <li><a href="#práctica">Práctica</a></li>
       </ul>
@@ -262,7 +271,7 @@
             
 <div class="td-content">
 	<h1>Contenido</h1>
-	<div class="lead">Dotar a nuestro sitio de contenido para publicar</div>
+  <div class="lead">Dotar a nuestro sitio de contenido para publicar</div>
 	<header class="article-meta">
 		
 </header>
@@ -287,15 +296,119 @@
 </div>
 
 <h1 id="contenido">Contenido</h1>
-<p>Ahora que tenemos una plantilla, queda lo principal, que es aportar contenido a nuestro sitio web.
-Son sitios estáticos, por lo que nuestro objetivo es aportar ficheros de texto con datos, información, imágenes, efectos visuales para que sean publicados en la web.
-La idea va a ser aportar ficheros en formato <a href="/dwes/es/">markdown</a> cuyo contenido queremos</p>
+<p>Ahora que tenemos una plantilla, queda lo principal, que es 
+<strong>
+<span class="font-weight-bold text-danger">
+
+    aportar contenido a nuestro sitio web.
+
+</span>
+</strong>
+
+
+<strong>
+<span class="font-weight-bold text-primary">
+
+    
+
+</span>
+</strong>
+</p>
+<p>Son sitios estáticos, por lo que nuestro objetivo es aportar 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ficheros de texto con datos, información, imágenes, efectos visuales
+
+</span>
+</strong>
+ para que sean publicados en la web.</p>
+<p>La idea va a ser aportar 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    ficheros en formato <a href="/dwes/es/">markdown</a>
+
+</span>
+</strong>
+cuyo contenido queremos  renderizar.</p>
 <h2 id="qué-estructura-tiene-el-contenido-de-las-páginas">¿Qué estructura tiene el contenido de las páginas?</h2>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Organizando contenidos</h4>
+
+    <p><strong>Esto implica una organización</strong></p>
+<blockquote>
+<p>No podemos poner páginas sin mas.</p>
+</blockquote>
+
+
+</div>
+
 <ul>
-<li>Ahora toca aportar contenido a nuestro sitio web. Las páginas Tipos de páginas de contenido. Agrupar las páginas por tipos.</li>
-<li>En Hugo el contenido se organiza como luego se va a ver en la web. Anidamos el contenido en subdirectorios (<strong>secciones</strong>): <code>content/&lt;directorios&gt;</code></li>
-<li>Pensar en <strong>front-matter</strong> - <strong>archetypes</strong></li>
-<li>Plantillas específicas para cada modelo</li>
+<li>
+<p>En Hugo el contenido 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    se organiza como luego se va a ver
+
+</span>
+</strong>
+ en la web.</p>
+</li>
+<li>
+<p>Anidamos el contenido 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    en subdirectorios (<strong>secciones</strong>)
+
+</span>
+</strong>
+ (directorios serán carpetas que iremos creando) :</p>
+</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>  content/directorios
+</span></span></code></pre></div><ul>
+<li>
+<p>Cada página de contenido va a tener  en la parte superior una zona especial, llamada 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <a href="https://gohugo.io/content-management/front-matter/">front-matter</a>
+
+</span>
+</strong>
+</p>
+</li>
+<li>
+<p>Cada página se creará siguiendo un patrón o modelo especificado en la carpeta 
+<strong>
+<span class="font-weight-bold text-primary">
+
+    <a href="https://gohugo.io/content-management/archetypes/">archetypes</a>
+
+</span>
+</strong>
+
+<figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 310px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/3_contenido/archtype_hu11363986753740869317.png" width="300" height="100">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+
+
+ 
+ 
+</p>
+</figcaption>
+</figure>
+</p>
+</li>
+<li>
+<p>Plantillas específicas para cada modelo</p>
+</li>
 </ul>
 <h2 id="creando-contenido-markdown">Creando contenido: markdown</h2>
 <p>Para crear nuevo contenido vamos  a generar páginas de texto con formato <strong>markdown</strong> <a href="/dwes/es/docs/03_hugo/3_contenido/#markdown"><em>(Hablamos más abajo sobre el tema)</em></a>
@@ -467,7 +580,11 @@ A continuación se muestra un breve ejemplo, pero esta parte no la vamos a inclu
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span><span style="color:#8b008b;font-weight:bold">tags</span>:<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- software<span style="color:#bbb">
 </span></span></span><span style="display:flex;"><span><span style="color:#bbb"></span>- html<span style="color:#bbb">
-</span></span></span></code></pre></div><h3 id="práctica">Práctica</h3>
+</span></span></span></code></pre></div><h1 id="markdown">Markdown</h1>
+<ul>
+<li>Muy importante</li>
+</ul>
+<h3 id="práctica">Práctica</h3>
 
 
 <div class="alert alert-success" role="alert">
@@ -521,9 +638,18 @@ Por ejemplo podría ser parte  del contenido de este curso visto anteriormente</
 </div>
 
 
-	
+  <div class="section-index">
+    
+    
+    <hr class="panel-line">
+        <div class="entry">
+                <h5>
+                    <a href="/dwes/es/docs/03_hugo/3_contenido/creacion/">Añadiendo</a>
+                </h5>
+                <p>Añadiendo contenido a nuestro sitio web</p>
+            </div>
+        </div>
 </div>
-
 
           </main>
         </div>
@@ -560,8 +686,26 @@ Por ejemplo podría ser parte  del contenido de este curso visto anteriormente</
 </footer>
 
     </div>
-    <script src="/dwes/js/main.min.5147d5c57c26605bd450ea5c7db2356c38ce9ec73109e7882adb50275732ce4b.js" integrity="sha256-UUfVxXwmYFvUUOpcfbI1bDjOnscxCeeIKttQJ1cyzks=" crossorigin="anonymous"></script>
-<script defer src="/dwes/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
 <script src='/dwes/js/tabpane-persist.js'></script>
 
   </body>

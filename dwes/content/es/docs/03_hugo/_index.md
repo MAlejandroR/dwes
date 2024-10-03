@@ -21,8 +21,8 @@ Todo esto, está hecho con el :heart: :smile:
 * Crear un sitio estático con hugo
 * Instala, configura y agrega contenidos usando una plantilla.
 {{% /pageinfo %}}
-  
- ![funcionamiento](images/funcionamiento.png)
+ 
+ <img src ="funcionamiento.png" alt="funcionamiento" height="1000px" />
 
 #### ¿Por qué un generador de sitios estáticos?
 * Rapidez
