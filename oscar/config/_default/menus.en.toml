@@ -1,0 +1,14 @@
+[[main]]
+name = "Blog"
+pageRef = "posts"
+weight = 10
+
+[[main]]
+name = "Opciones"
+pre = "email"
+pageRef = "mail.google.com"
+identifier = "1MTpDS7aPU"
+weight = 9999
+
+[[footer]]
+none = "none"

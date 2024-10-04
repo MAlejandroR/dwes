@@ -166,3 +166,15 @@ enable = true
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
+     [markup.goldmark.extensions]
+     [markup.goldmark.extensions]
+            alert = true  # Activa el uso de alertas
+            definitionList = true
+                  footnote = true
+                  linkify = true
+                  strikethrough = true
+                  table = true
+                  taskList = true
+                  typographer = true
+                  subscript = true  # Activa subíndices
+                  superscript = true  # Activa superíndices

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/.." vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/congo" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/themes/relearn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../idiomas/themes/learn" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../staticSite/themes/docsy" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../staticSite/themes/docsy/assets/vendor/Font-Awesome" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/../staticSite/themes/docsy/assets/vendor/bootstrap" vcs="Git" />
+  </component>
+</project>

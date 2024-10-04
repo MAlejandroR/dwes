@@ -101,6 +101,21 @@ Una vez colocada la carpeta con los ficheros, colocaremos en nuestro fichero ***
 #### mermaind
 
 
+El shortcode de {{<color_green>}}Mermaid{{</color_green>}} permite generar {{<color_green>}}diagramas y diagramas de flujo a partir de texto{{</color_green>}}, de manera similar a cómo se utiliza Markdown, gracias a la librería Mermaid.
+
+Aunque los ejemplos utilizan shortcodes con parámetros nombrados, se recomienda emplear bloques de código de Markdown en su lugar.
+
+Esto se debe a que cada vez más herramientas soportan los bloques de código de Mermaid en Markdown (por ejemplo, GitHub), lo que hace que tu contenido sea más portátil.
+
+
+```mermaid
+graph LR;
+If --> Then
+Then --> Else
+```
+visualizará:
+
+Los gráficos generados pueden moverse arrastrándolos y hacer zoom con la rueda del ratón. En dispositivos móviles, se puede interactuar con gestos táctiles.
 
 
 

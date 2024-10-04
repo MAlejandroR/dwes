@@ -1,9 +1,9 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
-  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=42957&amp;path=dwes/livereload" data-no-instant defer></script>
+  <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="robots" content="noindex, nofollow">
+<meta name="robots" content="index, follow">
 
 
 <link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
@@ -19,7 +19,7 @@
 
 <title>Añadiendo | Desarrollo Web</title>
 <meta name="description" content="Añadiendo contenido a nuestro sitio web">
-<meta property="og:url" content="http://localhost:42957/dwes/es/docs/03_hugo/3_contenido/creacion/">
+<meta property="og:url" content="http://web.infenlaces.com/dwes/es/docs/03_hugo/3_contenido/creacion/">
   <meta property="og:site_name" content="Desarrollo Web">
   <meta property="og:title" content="Añadiendo">
   <meta property="og:description" content="Añadiendo contenido a nuestro sitio web">
@@ -33,7 +33,7 @@
   <meta itemprop="description" content="Añadiendo contenido a nuestro sitio web">
   <meta itemprop="datePublished" content="2021-10-04T13:19:24+02:00">
   <meta itemprop="dateModified" content="2021-10-04T13:19:24+02:00">
-  <meta itemprop="wordCount" content="1187">
+  <meta itemprop="wordCount" content="1212">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Añadiendo">
   <meta name="twitter:description" content="Añadiendo contenido a nuestro sitio web">
@@ -41,8 +41,8 @@
 
 
 
-
-<link href="/dwes/scss/main.css" rel="stylesheet">
+<link rel="preload" href="/dwes/scss/main.min.452bc41721a1ac7a14559b3971a324e594b26003ab9be04fb2e608f5d013897a.css" as="style">
+<link href="/dwes/scss/main.min.452bc41721a1ac7a14559b3971a324e594b26003ab9be04fb2e608f5d013897a.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -327,8 +327,24 @@ Podemos consultar las siguientes referencias para el texto en markdown:</p>
 ### ....
 ## ...
 </code></pre><p>Observamos cómo usamos diferentes directorios para crear nuestra organización de nuestro contenido.</p>
-<p>Cada directorio corresponderá a una <strong>sección</strong></p>
-<p>Dentro de cada sección puede haber un fichero <strong>_index.md</strong> cuyo contenido se visualizará cuando seleccionemos el directorio concreto.
+<p>Cada directorio corresponderá a una <strong>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    sección
+
+</span>
+</strong>
+</strong></p>
+<p>Dentro de cadg  <strong>
+<strong>
+<span class="font-weight-bold text-primary">
+
+    _index.md
+
+</span>
+</strong>
+</strong> sección puede haber un fichero  cuyo contenido se visualizará cuando seleccionemos el directorio concreto.
 Por ejemplo para el contenido del curso podría tener una organización como se muestra en la imagen siguiente:</p>
 <pre tabindex="0"><code class="language-markmap" data-lang="markmap"># DWES
 
@@ -345,20 +361,16 @@ Por ejemplo para el contenido del curso podría tener una organización como se 
 ### Bases de datos
 #### Repaso de sql y concetos de BD
 #### Mysqli en php
-#### PDO en php
-### Librerías y utilidades de php
 ### Laravel
 - [Web de referencia](https://laravel.com/docs/8.x)
 #### Uso de un framework en la programación web
 #### Rutas
-#### Controladores y vistas
-#### Eloquent y bases de datos
 </code></pre><h4 id="creando-ficheros-y-secciones">Creando ficheros y secciones</h4>
 <p>Usaremos el CLI de hugo (línea de comandos) para crear ficheros de contenido y/o secciones</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>hugo new [seccion]/fichero.md
 </span></span></code></pre></div><p>La sección puede ser un directorio o varios (subdirectorios anidados)</p>
 <p>Los ficheros se crean en la carpeta <strong>content</strong> del directorio raíz del proyecto</p>
-<p>El fichero creado tendrá un  contenido según quede especificado en el fichero <strong>patrón</strong> ubicado en la carpeta <strong>archetypes/default.md</strong>
+<p>El fichero creado tendrá un  contenido según quede especificado en el fichero <strong>patrón</strong> ubicado en la carpeta <strong>archetypes/default.md</strong>. Podemos añadir otro fichero de patrón.
 
 
 <div class="pageinfo pageinfo-primary">
@@ -372,12 +384,36 @@ Por ejemplo para el contenido del curso podría tener una organización como se 
 </span></span><span style="display:flex;"><span>---
 </span></span></code></pre></div>
 </div>
+</p>
+<h4 id="las-páginas-en-el-directorio-content">Las páginas en el directorio content</h4>
+<ul>
+<li>Las páginas ubicadas directamente en el directorio 
+<strong>
+<span class="font-weight-bold text-primary">
 
-<strong>Las páginas en el directorio content</strong>
-*Las páginas ubicadas directamente en el directorio <strong>content</strong> serán páginas decir globales o bundles pages: contacto, about, datos relevantes. Estas páginas no son  secciones y por lo tanto no tendrán contenidos</p>
+    content
+
+</span>
+</strong>
+ serán páginas  globales o bundles pages: contacto, about, datos relevantes.</li>
+</ul>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Secciones Vs páginas</h4>
+
+    <ul>
+<li>Las secciones son <strong>directorios que contienen páginas</strong>.</li>
+<li>La página <strong>index.md o _index.md</strong>  es el contendio que se muestra al  seleccionar la sección.</li>
+<li>El resto de páginas se visualizarán como <strong>contenido de la sección en la parte del menú</strong></li>
+</ul>
+
+
+</div>
+
 <p>La forma de organizar las secciones dependerá de nuestra visión del sitio y en cualquier caso deben de ser páginas relacionadas con el tema de la sección: teoría, prácticas ,&hellip;.</p>
-<p>Cada directorio puede contener un fichero llamado <strong>_index.md</strong> que va a contener el índice o información que se visualizará al cargar la sección concreta, sería como el fichero índice de la sección.</p>
-<h5 id="creando-ficheros-con-realearn">Creando ficheros con realearn</h5>
+<p>Como hemos comentado Cada directorio puede (debería) de tener un fichero llamado <strong>_index.md</strong> (el fichero índice de la sección).</p>
+<h4 id="creando-ficheros-con-realearn">Creando ficheros con realearn</h4>
 <p>En el caso de la plantilla que estamos usando (<a href="https://mcshelby.github.io/hugo-theme-relearn/cont/pages/">ver documentación </a>), clasifica las páginas de dos tipos, las que son cabecera de un tema o sección (<em>_index.md</em>) y las que tienen contenido de las mismas.</p>
 <p>Para crear las páginas de un tipo u otro, tiene una serie de argumentos
 
@@ -385,14 +421,33 @@ Por ejemplo para el contenido del curso podría tener una organización como se 
 <div class="pageinfo pageinfo-primary">
 <p><strong>Ejemplo de cómo hacerlo con relearn</strong></p>
 <ul>
-<li>Para crear una página que es cabecera de capítulo (creamos la sección teoría y el fichero _index.md)</li>
+<li>
+<p>Para crear una página que es cabecera de capítulo (creamos la sección teoría y el fichero _index.md)</p>
+</li>
+<li>
+<p>Para crear un fichero dentro de la sección teoría</p>
+</li>
 </ul>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> hugo new chapter --kind teoria/_index.md
-</span></span></code></pre></div><ul>
-<li>Para crear un fichero dentro de la sección teoría</li>
-</ul>
-<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> hugo new chapter --kind teoria/tema1.md
-</span></span></code></pre></div>
+<div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-shell" data-lang="shell"><span style="display:flex;"><span> hugo new  teoria/tema1.md
+</span></span></code></pre></div><p>En este tema tenemos una archtype que es el
+<strong>
+<span class="font-weight-bold text-primary"></p>
+<pre><code>chapter
+</code></pre>
+</span>
+</strong>
+ que va a constituir una introducción a una sección (
+<strong>
+<span class="font-weight-bold text-primary">
+<pre><code>El fichero _index.md
+</code></pre>
+</span>
+</strong>
+)
+```shell
+ hugo new --kind chapter  teoria/_index.md
+```
+
 </div>
 </p>
 <h3 id="front---matter">Front   matter</h3>
@@ -579,8 +634,8 @@ window.markmap = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
-<script src="/dwes/js/main.js"></script>
-<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src="/dwes/js/main.min.54ee0141edf399f65c7c5d873b4257e06b4350953f729ccf23993a0742eb0691.js" integrity="sha256-VO4BQe3zmfZcfF2HO0JX4GtDUJU/cpzPI5k6B0LrBpE=" crossorigin="anonymous"></script>
+<script defer src="/dwes/js/click-to-copy.min.73478a7d4807698aed7e355eb23f9890ca18fea3158604c8471746d046702bad.js" integrity="sha256-c0eKfUgHaYrtfjVesj&#43;YkMoY/qMVhgTIRxdG0EZwK60=" crossorigin="anonymous"></script>
 <script src='/dwes/js/tabpane-persist.js'></script>
 
   </body>

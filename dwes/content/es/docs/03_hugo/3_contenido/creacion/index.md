@@ -45,9 +45,9 @@ Lo primero establecemos la organización de nuestros contenidos
 ```
 Observamos cómo usamos diferentes directorios para crear nuestra organización de nuestro contenido.
 
-Cada directorio corresponderá a una **sección**
+Cada directorio corresponderá a una **{{<color_green>}}sección{{</color_green>}}**
 
-Dentro de cada sección puede haber un fichero **_index.md** cuyo contenido se visualizará cuando seleccionemos el directorio concreto.
+Dentro de cadg  **{{<color_green>}}_index.md{{</color_green>}}** sección puede haber un fichero  cuyo contenido se visualizará cuando seleccionemos el directorio concreto.
 Por ejemplo para el contenido del curso podría tener una organización como se muestra en la imagen siguiente:
 ```markmap
 # DWES
@@ -65,14 +65,10 @@ Por ejemplo para el contenido del curso podría tener una organización como se 
 ### Bases de datos
 #### Repaso de sql y concetos de BD
 #### Mysqli en php
-#### PDO en php
-### Librerías y utilidades de php
 ### Laravel
 - [Web de referencia](https://laravel.com/docs/8.x)
 #### Uso de un framework en la programación web
 #### Rutas
-#### Controladores y vistas
-#### Eloquent y bases de datos
 ```
 #### Creando ficheros y secciones
 Usaremos el CLI de hugo (línea de comandos) para crear ficheros de contenido y/o secciones
@@ -83,7 +79,7 @@ La sección puede ser un directorio o varios (subdirectorios anidados)
 
 Los ficheros se crean en la carpeta **content** del directorio raíz del proyecto
 
-El fichero creado tendrá un  contenido según quede especificado en el fichero **patrón** ubicado en la carpeta **archetypes/default.md**
+El fichero creado tendrá un  contenido según quede especificado en el fichero **patrón** ubicado en la carpeta **archetypes/default.md**. Podemos añadir otro fichero de patrón.
 {{% pageinfo%}}
  **Creando un fichero md**
 ```bash
@@ -98,14 +94,20 @@ draft: false
 ---
 ```
 {{%/pageinfo%}}
-**Las páginas en el directorio content**
-*Las páginas ubicadas directamente en el directorio **content** serán páginas decir globales o bundles pages: contacto, about, datos relevantes. Estas páginas no son  secciones y por lo tanto no tendrán contenidos
+#### Las páginas en el directorio content
+* Las páginas ubicadas directamente en el directorio {{<color_green>}}content{{</color_green>}} serán páginas  globales o bundles pages: contacto, about, datos relevantes.
+
+{{< alert title="Secciones Vs páginas" color="warning" >}}
+* Las secciones son **directorios que contienen páginas**.
+* La página **index.md o _index.md**  es el contendio que se muestra al  seleccionar la sección.
+* El resto de páginas se visualizarán como **contenido de la sección en la parte del menú**
+{{< /alert >}}
 
 La forma de organizar las secciones dependerá de nuestra visión del sitio y en cualquier caso deben de ser páginas relacionadas con el tema de la sección: teoría, prácticas ,....
 
-Cada directorio puede contener un fichero llamado **_index.md** que va a contener el índice o información que se visualizará al cargar la sección concreta, sería como el fichero índice de la sección.
+Como hemos comentado Cada directorio puede (debería) de tener un fichero llamado **_index.md** (el fichero índice de la sección).
 
-##### Creando ficheros con realearn
+#### Creando ficheros con realearn
 
 En el caso de la plantilla que estamos usando ([ver documentación ](https://mcshelby.github.io/hugo-theme-relearn/cont/pages/)), clasifica las páginas de dos tipos, las que son cabecera de un tema o sección (*_index.md*) y las que tienen contenido de las mismas.
 
@@ -113,15 +115,22 @@ Para crear las páginas de un tipo u otro, tiene una serie de argumentos
 {{% pageinfo%}}
 **Ejemplo de cómo hacerlo con relearn**
 * Para crear una página que es cabecera de capítulo (creamos la sección teoría y el fichero _index.md)
-```shell
- hugo new chapter --kind teoria/_index.md
-```
+
 * Para crear un fichero dentro de la sección teoría 
 ```shell
- hugo new chapter --kind teoria/tema1.md
+ hugo new  teoria/tema1.md
  ```
 
+En este tema tenemos una archtype que es el {{<color_green>}}chapter{{</color_green>}} que va a constituir una introducción a una sección ({{<color_green>}}El fichero _index.md{{</color_green>}})
+```shell
+ hugo new --kind chapter  teoria/_index.md
+```
+
+
 {{% /pageinfo%}}
+
+
+ 
 ### Front   matter
  https://gohugo.io/content-management/front-matter/
 Cuando generamos contenidos, los ficheros creados vemos que en la cabecera o primeras líneas  pueden tener ***metainformación***
