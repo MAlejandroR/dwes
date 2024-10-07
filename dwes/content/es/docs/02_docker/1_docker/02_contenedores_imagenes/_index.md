@@ -16,7 +16,7 @@ draft: false
 
 > **{{<color_blue >}}La imagen{{</color_blue>}} es un fichero que contiene todo el conjunto de librerías, dependencias y configuraciones necesarias para ejecutar un entorno aislado, con servicios y procesos, junto con su propia IP, y que servirá como base para crear uno o varios contenedores.**
 
-{{%line%}}  {{% /line%}}
+{{%line%}} 
  
 {{< imgproc Imagen Fill "611x812" >}}
 

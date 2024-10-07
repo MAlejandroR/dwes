@@ -91,7 +91,7 @@ En este caso el comando start lo deja en estado up, ya que el contenedor fue cor
 
 
 
-{{<line />}}
+{{<line >}}
 
 {{% pageinfo color="primary" %}}
 #### Crear un contenedor con run
@@ -126,7 +126,7 @@ docker ps
 {{< alert title="Prueba" color="warning" >}}
 Si no ponemos __-a__ que viene de __all__ solo nos mostrará los contenedores que actualmente tenemos arrancados (en estado Up)
 {{< /alert >}}
-{{<line />}}
+{{<line >}}
 {{% pageinfo color="primary" %}}
 #### Parar un contenedor
 >__stop__
@@ -136,7 +136,7 @@ Si no ponemos __-a__ que viene de __all__ solo nos mostrará los contenedores qu
 ```
 {{% /pageinfo %}}
 
-{{<line />}}
+{{<line >}}
 {{% pageinfo color="primary" %}}
 #### Estados de un contenedor
 >__Un contenedor está en uno de los siguientes estados__
@@ -165,7 +165,7 @@ __:star: El contenedor tiene que estar en estado Up__
     docker exec -ti  web ls
 ```
 {{% /pageinfo %}}
-{{<line />}}
+{{<line >}}
 
 
 
@@ -201,7 +201,7 @@ __:star: El contenedor tiene que estar en estado Up__
 Si intentamos crear un contenedor cuyo nombre ya exista nos dará un error.
 En este 
 {{< /alert >}}
-{{<line />}}
+{{<line >}}
 
 {{% pageinfo color="primary" %}}
 #### Forward de puertos 
@@ -231,7 +231,7 @@ En este
  * Cuidado con la barra de separacion de carpetas o directorios __(en windows "\", en linux "/")__
    * Si la carpeta no existe la crea
 {{< /alert >}}
-{{<line />}} 
+{{<line >}} 
 {{% pageinfo%}}
 #### Creando una imagen a partir de un contenedor
 >__docker commit__

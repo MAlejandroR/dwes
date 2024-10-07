@@ -35,7 +35,7 @@
   @include palette-variant($color, $value);
 }
 
-// This allows "painting by numbers", i.e. picking colors by a shortcode Ordinal.
+// This allows "painting by numbers", i.e. picking colors by a shortcodes Ordinal.
 @for $i from 1 through length($td-box-colors) {
   $value: nth($td-box-colors, $i);
   $name: $i - 1;

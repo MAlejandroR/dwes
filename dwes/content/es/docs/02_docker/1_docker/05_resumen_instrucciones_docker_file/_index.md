@@ -28,7 +28,7 @@ docker build -t web:v1 .
 _docker help build
 ````
 {{< /alert >}}
-{{<line />}} 
+{{<line >}} 
 
 
 {{% pageinfo color="primary" %}}
@@ -44,7 +44,7 @@ FROM ubuntu:latest
  * Su aparición es obligatoria
  * Solo le pueden preceder comentarios __'#'__ y la instrucción __ARG__
 {{< /alert >}}
-{{<line />}} 
+{{<line >}} 
 {{% pageinfo color="primary" %}}
 ####  Especificar una instrucción a ejectuar dentro de la imagen
 > __RUN__
@@ -62,7 +62,9 @@ net-tools
  * La barra __'\'__ es una forma de seguir en la línea sigueinte como si fuera la misma
  * Se puede ejecutar también un fichero externo que copiemos o cualquier instrucción.
  {{< /alert >}}
-{{<line />}} 
+  
+{{% line %}} 
+
 {{% pageinfo color="primary" %}}
 ####  Especificar argumentos 
 > __ARG__
@@ -73,12 +75,16 @@ FROM ubuntu:$version
 RUN echo "Valor de version -$version" version.txt
 ```
 {{% /pageinfo %}}
+
 {{< alert title="Comentarios" color="warning" >}}
  * El valor de los argumentos especificados con __ARG__ no se mantienen más ayá de la ejecución del fichero __Dockerfile__
  * Se puede modificar el valor de los argumentos a la hora de construir la imagen 
   > __docker build -t web - -build-arg=18:01 .__
- {{< /alert >}}
-{{<line />}} 
+
+{{< /alert >}}
+  
+ 
+
 {{% pageinfo color="primary" %}}
 ####  Especificando  
 > __ARG__
@@ -94,7 +100,9 @@ RUN echo "Valor de version -$version" >> version.txt
 * Se puede modificar el valor de los argumentos a la hora de construir la imagen
 > __docker build -t web - -build-arg=18:01 .__
 {{< /alert >}}
-{{<line />}}
+ 
+{{<line >}}
+
 {{% /pageinfo %}}
 {{% pageinfo color="primary" %}}
 ####  Especificar variables de entorno (disponibles en la construcción y en la imagen cuando se construya)
@@ -115,7 +123,9 @@ docker run web:v1 cat version.txt
 {{< alert title="Comentarios" color="warning" >}}
 :memo: En este ejemplo, al contenedor le decimos que muestre _el contenido del fichero version.txt_ con el comando __cat__
 {{< /alert >}}
-{{<line />}}
+
+{{<line >}}
+
 {{% pageinfo color="primary" %}}
 ####  Copiar ficheros del contesto a la imagen
 > __COPY__
@@ -148,7 +158,7 @@ docker run -d -p 8000:80 --name web web:v1 sh -c "service apache2 start && tail 
 * El comando para arrancar el servicio __service apache2 start__
 * Y para que no se termine el proceso ejectuamos un comando que deja abierto un fichero __tail -f /dev/null__
 {{< /alert >}}
-{{<line />}}
+{{<line >}} 
   {{% pageinfo color="primary" %}}
 ####  ADD: Copiar ficheros del contesto a la imagen.
 ####  CMD ejecuta un comando cuando se inicia el contenedor.
@@ -201,7 +211,7 @@ docker run -d -p 8000:80 --name web web:v1
 * No tenemos que especificar ningún comando para que se ejecute el contenedor
 * El __-d__ es para especificar que se ejecute el contenedor en background.
   {{< /alert >}}
-  {{<line />}}
+  {{<line >}} 
 
 {{% pageinfo color="primary" %}}
 ####  Especificar el puerto que voy a mapear o realizar el forware
@@ -228,7 +238,7 @@ CMD sh -c "service apache2 start && tail -f /dev/null"
 * Es recomendado en las buenas prácticas
 > __docker build -t web - -build-arg=18:01 .__
 {{< /alert >}}
-{{<line />}}
+{{<line >}} 
 {{% pageinfo color="primary" %}}
 ####  Crear etiquetas en la imagen
 > __LABEL__
@@ -256,4 +266,4 @@ CMD sh -c "service apache2 start && tail -f /dev/null"
 * __maintainer, description, version__ se usan de forma estándar. 
 > __docker build -t web - -build-arg=18:01 .__
 {{< /alert >}}
-{{<line />}} 
+{{<line >}} 

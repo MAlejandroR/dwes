@@ -118,12 +118,12 @@ Para crear las páginas de un tipo u otro, tiene una serie de argumentos
 
 * Para crear un fichero dentro de la sección teoría 
 ```shell
- hugo new  teoria/tema1.md
+ hugo new  01_teoria/tema1.md
  ```
 
 En este tema tenemos una archtype que es el {{<color_green>}}chapter{{</color_green>}} que va a constituir una introducción a una sección ({{<color_green>}}El fichero _index.md{{</color_green>}})
 ```shell
- hugo new --kind chapter  teoria/_index.md
+ hugo new --kind chapter  01_teoria/_index.md
 ```
 
 
@@ -187,7 +187,7 @@ https://gohugo.io/content-management/taxonomies
 
 Una taxonomía es una categorización que nos permite clasificar contenido.
 
-Por ejemplo, en una web de Películas podríamos tener actores, directores, estudios, géneros, años, premios ... 
+Por ejemplo, en una web de Películas podríamos tener actores, directores, estudios, géneros, años, premios ...
 A continuación se muestra un breve ejemplo, pero esta parte no la vamos a incluir en nuestro ejemplo.
 
 Por defecto Hugo añade las taxonomías **categories** y **tags**. Se pueden añadir más en **config**
@@ -215,12 +215,12 @@ tags:
 # Markdown
 
 * Muy importante
- 
+
 ### Práctica
 {{< alert title="Ahora practica tú " color="success" >}}
 :grinning:
 * Establece un contenido para tu sitio web.
- Para ello debes de tener clara las secciones y en cada sección los ficheros contenidos
+  Para ello debes de tener clara las secciones y en cada sección los ficheros contenidos
   Por ejemplo podría ser parte  del contenido de este curso visto anteriormente
 ```markmap
 # content_ (directorio raíz base)
@@ -261,7 +261,7 @@ También podrías usar la estructura anterior e ir completándola con esquemas, 
 
 Ahora reordena todo usando el *frontmatter*, recuerda la propiedad **weight**, modifica los títulos según consideres y puedes poner una descripción.
 
-Ve revisando como queda todo al visualizarlo en la web 
+Ve revisando como queda todo al visualizarlo en la web
 
 
 Comprueba en el servidor como se ha actualizado tu sitio web

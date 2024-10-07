@@ -137,11 +137,11 @@ Para crear las páginas de un tipo u otro, tiene una serie de argumentos
 **Ejemplo de cómo hacerlo con relearn**
 * Para crear una página que es cabecera de capítulo (creamos la sección teoría y el fichero _index.md)
 ```shell
- hugo new chapter --kind teoria/_index.md
+ hugo new chapter --kind 01_teoria/_index.md
 ```
 * Para crear un fichero dentro de la sección teoría 
 ```shell
- hugo new chapter --kind teoria/tema1.md
+ hugo new chapter --kind 01_teoria/tema1.md
  ```
 
 {{% /pageinfo%}}

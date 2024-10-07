@@ -75,3 +75,9 @@ El proyecto está organizado en varias secciones, cada una dedicada a un tema de
 * {{<color_green color="white">}}white{{</color_green>}}
 
 ````
+
+### Pendientes
+
+La fuente de iconos que he creado no se ve    
+
+Debe de tener que ver con la clase before de css . 

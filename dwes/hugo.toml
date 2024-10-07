@@ -91,6 +91,7 @@ sidebar_menu_foldable = true
 custom_css=['/css/icons.css','custom.css']
 copyright = "@MRomero"
 privacy_policy = "https://policies.google.com/privacy"
+logo="images/logo.png"
 
 
 
@@ -161,12 +162,11 @@ algolia_docsearch = false
 enable = true
 
 
-# Para rederizar el html en md, y dentro de shortcode
+# Para rederizar el html en md, y dentro de shortcodes
 [markup]
   [markup.goldmark]
     [markup.goldmark.renderer]
       unsafe = true
-     [markup.goldmark.extensions]
      [markup.goldmark.extensions]
             alert = true  # Activa el uso de alertas
             definitionList = true
