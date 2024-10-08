@@ -27,13 +27,13 @@ Una vez presionado el botón, aportamos los datos que nos solicita y nos registr
 
 ## Crear un nuevo repositorio
 
-Entrando con nuestro usuario y password, ya podemos crear un nuevo repositorio (la idea es  crear un directorio que llamo de una forma para guardar un determinado proyecto en la nube).
+Entrando con nuestro usuario y password, ya podemos {{< color >}} crear un nuevo repositorio {{< /color >}} (la idea es  crear un directorio con un determinado nombre,  para guardar un determinado proyecto en la nube).
 
-Buscamos la opción de nuebo repositorio y lo presionamos
+Buscamos la opción de {{< color >}} nuevo repositorio {{< /color >}} y lo presionamos
 
 ![Crear un nuevo repositorio](new_repositorio.png)
 
-Entonces nos mostrará un menú para insertar un nuevo repositorio
+Esto,  nos mostrará un menú para {{< color >}} insertar {{< /color >}} un nuevo repositorio
 
 ![Crear un nuevo repositorio](new_repositorio_2.png)
 
@@ -41,12 +41,14 @@ Insertamos un nombre y presionamos al final de la página el botón *****Create 
 
 ![Crear un nuevo repositorio](create_repositorio.png)
 
-Una vez creado vemos una serie de instrucciones que debemos de escribir en nuestro proyecto local, creando un repositorio en local y  ligarlo a este repositorio
+Una vez creado, vemos una serie de {{< color >}} instrucciones {{< /color >}} que debemos de escribir en nuestro equipo local, creando un repositorio en local y  ligándolo a este repositorio
+
 ![Repositorio creado](repositorio_creado.png)
 
-## Crear un proyecto en local y crear un repositorio
-Ahora vamos a local y ejecutamos las instrucciones que nos ha indicado el servidor de github para crear el repositorio en local y vincularlo al repositorio en github
-Previamente a configurar el proyecto, y solo la primera vez, ya que se hará de forma **global**, vamos a configurar nuestros datos de git en local con los siguientes comandos
+### Crear un proyecto en local y crear un repositorio
+Ahora, en {{< color >}} el equipo local  ejecutamos las instrucciones {{< /color >}} que nos ha indicado el servidor de github para crear el repositorio en local y vincularlo al repositorio en github.
+
+Previo a configurar el proyecto, y solo la primera vez ya que se hará de forma **global**, vamos a configurar nuestros datos de git en local con los siguientes comandos
 ```bash
 git config --global user.name NombreUsuarioGit
 git config --global user.mail emailUsuarioGiyt
@@ -54,12 +56,13 @@ git config --global user.mail emailUsuarioGiyt
 ```
 
 Una vez configurado el sitio, suponemos que tenemos un proyecto en local bajo un directorio donde nos ubicaremos
+
 Ahí escribimos:
 1. **Para crear el directorio en local**
 ```bash
 git init
 ```
->>Este comando crearé un directorio en local llamado .github que inicializará el repositorio en local
+>>Con este comando se  crearé un directorio en local llamado .github que inicializará el repositorio en local
 2. **Agregar ficheros al repositorio**
 ```bash
 git add *
@@ -77,7 +80,9 @@ git commit -m "Primera actualización del proyecto"
 ```bash
 git branch -m main
 ```
-> En este caso establecemos la rama de trabajo **main**. Un proyecto puede tener varias ramas, las cuales llevan una vida independiente en el desarrollo del proyecto hasta que se unan o establezca un  **merge** al proyecto principal
+> En este caso establecemos la rama de trabajo **main**.        
+
+>Un proyecto puede tener varias ramas, las cuales llevan una vida independiente en el desarrollo del proyecto hasta que se unan o establezca un  **merge** al proyecto principal
 5. **Ligamos el proyecto local al remoto**
 ```bash
 git remote add origin main   https://github/Usuario/Proyecto.git *
@@ -89,18 +94,19 @@ git push origin main *
 ```
 > Este comando sube todos los ficheros preparados (que se han unido con el comando **add**), asignándoles el mensaje asociado al comando **commit** al repositorio en remoto de github
 
-## Realizar cambios en local y subirlos a git
+### Realizar cambios en local y subirlos a git
 Ahora trabajaremos con normalidad en nuestro proyecto y cuando consideremos (un buen criterio es que hayamos realizado una parte funcional, no se trata de subir el proyecto cada 5 minutos)
+
 Cuando lo queremos subir repetimos estos tres pasos
 ```shell
 git add *
 git commit -m "con esta parte funcionando ..."
 git push origin main
 ```
-## Clonar el proyecto en local
-Ahora si vamos a otro ordenador y queremos trabajar con nuestro proyecto, lo tenemos que descargar o clonar. 
+### Clonar el proyecto en local
+Se trata de traernos el proyecto del servidor a local para trabajar él; para ello lo tenemos que {{< color >}} descargar o clonar {{< /color >}}. 
 
-Para ello necesitamos la referencia del proyecto que podemos obtener accediendo a nuestro repositorio, y en el botón code, ver la referencia
+Necesitamos  {{< color >}} la referencia del proyecto {{< /color >}} que podemos obtener accediendo a nuestro repositorio, y en el botón code. Ahí tenemos la dirección donde se ubica nuestro proyecto
 
 ![Nombre del repositorio ](url_repositorio.png)
 
@@ -109,16 +115,21 @@ git clone https://github.com/Usuario/proyecto.git
 ```
 Ahora trabajamos en el proyecto y lo vamos modificando haciendo los push que correspondan
 
-## Actualizar el proyecto engi github
-En este caso, si volvemos a otro equipo donde tenemos el proyecto, el cual lo hemos modificado en un equipo diferente, lo tendremos que actualizar del servidor, antes de seguir trabajando. Esto lo hacemos con el comando pull
+~## Actualizar el proyecto en github
+En este caso, si volvemos a otro equipo donde tenemos el proyecto, el cual lo hemos modificado en un equipo diferente, lo tendremos que actualizar del servidor, antes de seguir trabajando. 
+
+Esto lo hacemos con el comando {{< color >}} pull {{< /color >}}
+
 ```shell
 git pull
 ```
 Y continuamos trabajando
 
-## Credenciales para trabajar con git
+### Credenciales para trabajar con git
 Siempre que queramos interactuar con el proyecto, nos va a pedir que nos identifiquemos.
-Pero git, ya no permite identificarse con el password, si no que hay que crearse un token, e identificarse con ese token.
+
+Pero git, ya no permite identificarse con el password, sino que hay que crearse un {{< color >}} token, {{< /color >}} e identificarse con ese token.
+
 Para crear un token accedemos a la opción Settings del menú de nuestro usuario
 
 ![Opción setting](opcion_setting.png)
@@ -139,9 +150,3 @@ En esta acción, sí que exige que nos identifiquemos con nuestra password
 
 
 
-
-### Tocken
-### Clave pública y privada
-
-
-Crear 
