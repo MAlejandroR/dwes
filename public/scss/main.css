@@ -21003,4 +21003,10 @@ div.drawioframe {
   font-size: 10px;
   /* Ajusta el tamaño según lo que necesites */ }
 
+.navbar-brand img {
+  width: 120px;
+  /* Cambia este valor para ajustar el ancho */
+  height: auto;
+  /* Mantiene la proporción del logo */ }
+
 /*# sourceMappingURL=main.css.map */

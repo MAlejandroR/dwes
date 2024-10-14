@@ -10,24 +10,8 @@ description: "Crear el sitio multilingüe"
 {{% pageinfo %}}
 * Ver cómo establecer diferentes lenguajes en nuestro proyecto
 * https://gohugo.io/content-management/multilingual/
-* https://learn.netlify.app/en/cont/i18n/
-## Para este cometido
-
-    1.- Vamos a actualizar el trabajo realizado para los diferentes idiomas 
-    2.- Vamos a usar la plantilla relearn, y veremos también cómo actualizar la primera pantalla
-    3.- Para la traducción usaremos translate de google
-    4.- Si quieres puedes crear un proyecto de 0 para centrarte en este aspecto de un proyecto
-{{% /pageinfo %}}
-{{< alert title="Recuerda" color="warning" >}}
-**Como crear un proyecto en hugo y establecer la plantilla relearn**
-```bash
-     hugo new site idiomas
-     cd idiomas
-     git init
-     git submodule add https://github.com/matcornic/hugo-theme-learn.git themes/learn
-```
-
-{{< /alert >}}
+* https://relearn.netlify.app/en/cont/i18n/
+{{% /pageinfo%}}
 
 # Multilenguaje
 Hugo permite establecer el {{<color>}}multilenguaje{{</color>}}

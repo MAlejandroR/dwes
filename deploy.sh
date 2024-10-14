@@ -12,7 +12,7 @@ echo "Inicializando repositorio Git..."
 git init
 
 # 4. Añadir el repositorio remoto (sustituir 'usuario' y 'nombre-del-repositorio' por los correctos)
-git remote add origin git@github.com:usuario/nombre-del-repositorio.git
+git remote add origin git@github.com:MAlejandroR/dwes.git
 
 # 5. Crear y cambiar a la rama 'gh-pages'
 git checkout -b gh-pages

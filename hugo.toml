@@ -1,7 +1,8 @@
 #baseURL = 'http://proyectosdwa.es/manuel'
 baseURL = 'http://web.infenlaces.com/dwes/'
-#baseURL = 'http://localhost/'
-# theme= 'docsy'
+#baseURL = 'http://localhost:1313/'
+
+#theme= 'docsy'
 
 
 #Language settings   content dir
@@ -182,3 +183,8 @@ enable = true
                   typographer = true
                   subscript = true  # Activa subíndices
                   superscript = true  # Activa superíndices
+
+# Con print sale el botón de imprimir la página.
+[outputs]
+section = [ "HTML", "RSS", "print" ]
+

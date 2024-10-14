@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Static Site Generators on Desarrollo Web</title>
+    <link>http://localhost:1313/es/tags/static-site-generators/</link>
+    <description>Recent content in Static Site Generators on Desarrollo Web</description>
+    <generator>Hugo</generator>
+    <language>es</language>
+    <lastBuildDate>Mon, 04 Oct 2021 12:01:52 +0200</lastBuildDate>
+    <atom:link href="http://localhost:1313/es/tags/static-site-generators/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Instalación</title>
+      <link>http://localhost:1313/es/docs/03_hugo/1_instalacion/</link>
+      <pubDate>Mon, 04 Oct 2021 12:01:52 +0200</pubDate>
+      <guid>http://localhost:1313/es/docs/03_hugo/1_instalacion/</guid>
+      <description>&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;&#xA;&lt;p&gt;&amp;#x2705;&#xA;&lt;strong&gt;Objetivos&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Aprenderemos a instalar &lt;em&gt;hugo&lt;/em&gt; y crear un &lt;strong&gt;nuevo sitio web&lt;/strong&gt;&lt;/li&gt;&#xA;&lt;li&gt;&amp;#x1f604; qué bonito &lt;em&gt;es&lt;/em&gt;&lt;/li&gt;&#xA;&lt;li&gt;No olvides, si se necesita, configurar el &lt;strong&gt;path&lt;/strong&gt; del sistema para acceder desde cualquier invocación&lt;/li&gt;&#xA;&lt;li&gt;Gestionamos todo desde un &lt;strong&gt;terminal&lt;/strong&gt; independientemente de usar linux o windows&lt;/li&gt;&#xA;&lt;li&gt;Verifica la versión instalada&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;strong&gt;Páginas referenciadas&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Web de visual code : &lt;a href=&#34;https://code.visualstudio.com/&#34;&gt;https://code.visualstudio.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;Web de jetsbrain y phpstorm: &lt;a href=&#34;https://www.jetbrains.com/&#34;&gt;https://www.jetbrains.com/&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;hugo: &lt;a href=&#34;https://gohugo.io&#34;&gt;https://gohugo.io&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;li&gt;&#xA;&lt;p&gt;página de snap : &lt;a href=&#34;https://snapcraft.io/docs/snap-documentation&#34;&gt;https://snapcraft.io/docs/snap-documentation&lt;/a&gt;&lt;/p&gt;&#xA;&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&#xA;&lt;/div&gt;&#xA;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;instalación&#34;&gt;Instalación&lt;/h3&gt;&#xA;&lt;p&gt;Tiene instaladores para mac, windows y linux:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
