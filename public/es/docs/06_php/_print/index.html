@@ -1,0 +1,732 @@
+<!doctype html>
+<html itemscope itemtype="http://schema.org/WebPage" lang="es" class="no-js">
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link rel="canonical" type="text/html" href="http://localhost:1313/dwes/es/docs/06_php/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/es/docs/06_php/index.xml">
+<meta name="robots" content="noindex, nofollow">
+
+
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
+
+<title>PHP  | Desarrollo Web</title>
+<meta name="description" content="Lenguaje de programación php
+">
+<meta property="og:url" content="http://localhost:1313/dwes/es/docs/06_php/">
+  <meta property="og:site_name" content="Desarrollo Web">
+  <meta property="og:title" content="PHP ">
+  <meta property="og:description" content="Lenguaje de programación php">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="website">
+
+  <meta itemprop="name" content="PHP ">
+  <meta itemprop="description" content="Lenguaje de programación php">
+  <meta itemprop="datePublished" content="2024-09-15T00:00:00+00:00">
+  <meta itemprop="dateModified" content="2024-09-15T00:00:00+00:00">
+  <meta itemprop="wordCount" content="1">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="PHP ">
+  <meta name="twitter:description" content="Lenguaje de programación php">
+
+
+
+
+
+<link href="/dwes/scss/main.css" rel="stylesheet">
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.min.js"
+  integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+  crossorigin="anonymous"></script>
+
+  </head>
+  <body class="td-section">
+    <header>
+      <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
+<div class="container-fluid flex-column flex-md-row ">
+  <a class="navbar-brand" href="/dwes/es/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
+    </span><span class="navbar-brand__name">Desarrollo Web</span></a>
+  <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/02_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/es/dwes/docs/03_hugo/"><span>Hugo</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="/dwes/es/docs/02_docker/1_docker/"><span>Docker</span></a>
+      </li>
+      <li class="nav-item dropdown d-none d-lg-block">
+        <div class="dropdown">
+  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Español</a>
+  <ul class="dropdown-menu">
+    <li><a class="dropdown-item" href="/dwes/fr/">Francés</a></li>
+    <li><a class="dropdown-item" href="/dwes/en/">English</a></li>
+    </ul>
+</div></li>
+      </ul>
+  </div>
+  <div class="d-none d-lg-block">
+    
+  </div>
+</div>
+</nav>
+
+    </header>
+    <div class="container-fluid td-outer">
+      <div class="td-main">
+        <div class="row flex-xl-nowrap">
+          <main class="col-12 col-md-9 col-xl-8 ps-md-5" role="main">
+            
+
+
+
+
+<div class="td-content">
+<div class="pageinfo pageinfo-primary d-print-none">
+<p>
+Versión imprimible multipagina.
+<a href="#" onclick="print();return false;">Haga click aquí para imprimir</a>.
+</p><p>
+<a href="/dwes/es/docs/06_php/">Volver a la vista normal de esta página</a>.
+</p>
+</div>
+
+
+
+<h1 class="title">PHP </h1>
+<div class="lead">Lenguaje de programación php</div>
+
+
+
+
+    <ul>
+    
+  
+  
+  
+  
+
+  
+    
+    
+	
+<li>1: <a href="#pg-81e34e64aa5017f771ea13ed2c9fe764">Introducción</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>2: <a href="#pg-5d13bdb451ca61fb241421ac55c7a232">Instalación</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>3: <a href="#pg-a029db00a8c85ed752c7e591336a4ee6">Empezando</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>4: <a href="#pg-67a120b6cf1a56c1ffb7527ce5cc421c">Declaraciones</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>5: <a href="#pg-cee7d7a104a6313742dfd6c3b548e647">Control</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>6: <a href="#pg-7b46b0e4492985878993191a8371d294">Escribiendo</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>7: <a href="#pg-a2888197ea9c1021602fc9ec972c3aa0">Expresiones</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>8: <a href="#pg-18494aee0d2edd4661b6cef2f2498d63">Otros Ascpectos</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>9: <a href="#pg-fc783b289148969a52b0dfaa14ed8a3f">Arrays</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>10: <a href="#pg-18c1ea3246dda468d7932b3ed3574330">Formularios</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+    
+    
+	
+<li>11: <a href="#pg-4293ea0f78fd7144e03a085da6145e69">Objetos</a></li>
+
+
+    
+    <ul>
+        
+  
+  
+  
+  
+
+  
+
+    </ul>
+    
+  
+
+    </ul>
+
+
+<div class="content">
+      <iframe src="https://es.wikieducator.org/index.php?curid=5570" width="100%" height="2554">WikiEducator </iframe>
+
+</div>
+</div>
+
+
+  
+  
+  
+  
+
+  
+  
+
+  
+    
+    
+	
+    
+
+<div class="td-content" style="">
+    
+	<h1 id="pg-81e34e64aa5017f771ea13ed2c9fe764">1 - Introducción</h1>
+    <div class="lead">Introducción al lenguaje</div>
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-5d13bdb451ca61fb241421ac55c7a232">2 - Instalación</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a029db00a8c85ed752c7e591336a4ee6">3 - Empezando</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-67a120b6cf1a56c1ffb7527ce5cc421c">4 - Declaraciones</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-cee7d7a104a6313742dfd6c3b548e647">5 - Control</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-7b46b0e4492985878993191a8371d294">6 - Escribiendo</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-a2888197ea9c1021602fc9ec972c3aa0">7 - Expresiones</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-18494aee0d2edd4661b6cef2f2498d63">8 - Otros Ascpectos</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-fc783b289148969a52b0dfaa14ed8a3f">9 - Arrays</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-18c1ea3246dda468d7932b3ed3574330">10 - Formularios</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+    
+    
+	
+    
+
+<div class="td-content" style="page-break-before: always">
+    
+	<h1 id="pg-4293ea0f78fd7144e03a085da6145e69">11 - Objetos</h1>
+    
+	
+</div>
+
+
+
+    
+      
+  
+  
+  
+  
+
+  
+  
+
+  
+
+    
+	
+  
+
+
+
+          </main>
+        </div>
+      </div>
+      <footer class="td-footer row d-print-none">
+  <div class="container-fluid">
+    <div class="row mx-md-2">
+      <div class="td-footer__left col-6 col-sm-4 order-sm-1">
+        <ul class="td-footer__links-list">
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="Correo del usuario" aria-label="Correo del usuario">
+    <a target="_blank" rel="noopener" href="https://example.org/mail" aria-label="Correo del usuario">
+      <i class="fa fa-envelope"></i>
+    </a>
+  </li>
+  
+  <li class="td-footer__links-item" data-bs-toggle="tooltip" title="GitHub" aria-label="GitHub">
+    <a target="_blank" rel="noopener" href="https://github.com/MAlejandroR" aria-label="GitHub">
+      <i class="fab fa-github"></i>
+    </a>
+  </li>
+  
+</ul>
+
+      </div><div class="td-footer__right col-6 col-sm-4 order-sm-3">
+        
+      </div><div class="td-footer__center col-12 col-sm-4 py-2 order-sm-2">
+        <span class="td-footer__copyright">&copy;
+    2024
+    <span class="td-footer__authors">@MRomero</span></span><span class="td-footer__all_rights_reserved">Derechos reservados</span><span class="ms-2"><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Política de privacidad</a></span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <style>
+.markmap > svg {
+  width: 100%;
+  height: 300px;
+}
+</style>
+<script>
+window.markmap = {
+  autoLoader: {
+      manual: true,
+      onReady() {
+        const { autoLoader, builtInPlugins } = window.markmap;
+        autoLoader.transformPlugins = builtInPlugins.filter(plugin => plugin.name !== 'prism');
+      },
+  },
+};
+</script>
+<script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
+
+  </body>
+</html>

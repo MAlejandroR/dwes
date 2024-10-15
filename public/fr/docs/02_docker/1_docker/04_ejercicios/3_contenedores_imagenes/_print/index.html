@@ -1,27 +1,27 @@
 <!doctype html>
 <html itemscope itemtype="http://schema.org/WebPage" lang="fr" class="no-js">
-  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <head><script src="/dwes/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=dwes/livereload" data-no-instant defer></script>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<link rel="canonical" type="text/html" href="http://localhost:1313/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/">
-<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/index.xml">
+<link rel="canonical" type="text/html" href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/">
+<link rel="alternate" type="application/rss&#43;xml" href="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/index.xml">
 <meta name="robots" content="noindex, nofollow">
 
 
-<link rel="shortcut icon" href="/favicons/favicon.ico" >
-<link rel="apple-touch-icon" href="/favicons/apple-touch-icon-180x180.png" sizes="180x180">
-<link rel="icon" type="image/png" href="/favicons/favicon-16x16.png" sizes="16x16">
-<link rel="icon" type="image/png" href="/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="/favicons/android-36x36.png" sizes="36x36">
-<link rel="icon" type="image/png" href="/favicons/android-48x48.png" sizes="48x48">
-<link rel="icon" type="image/png" href="/favicons/android-72x72.png" sizes="72x72">
-<link rel="icon" type="image/png" href="/favicons/android-96x96.png" sizes="96x96">
-<link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
-<link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
+<link rel="shortcut icon" href="/dwes/favicons/favicon.ico" >
+<link rel="apple-touch-icon" href="/dwes/favicons/apple-touch-icon-180x180.png" sizes="180x180">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-16x16.png" sizes="16x16">
+<link rel="icon" type="image/png" href="/dwes/favicons/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-36x36.png" sizes="36x36">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-48x48.png" sizes="48x48">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-72x72.png" sizes="72x72">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-144x144.png" sizes="144x144">
+<link rel="icon" type="image/png" href="/dwes/favicons/android-192x192.png" sizes="192x192">
 
 <title>Contenedores | Docsy</title>
 <meta name="description" content="Powerful, extensible, and feature-packed frontend toolkit. Build and customize with Sass, utilize prebuilt grid system and components, and bring projects to life with powerful JavaScript plugins.">
-<meta property="og:url" content="http://localhost:1313/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/">
+<meta property="og:url" content="http://localhost:1313/dwes/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/">
   <meta property="og:site_name" content="Docsy">
   <meta property="og:title" content="Contenedores">
   <meta property="og:description" content="Contenedores =&gt; imágenes ❗ Como crear nuestras imágenes En esta sección realizaremos acciones para pasar crear nuestras imágenes a partir de contenedores
@@ -48,7 +48,7 @@ La forma de construir una imagen es en capas, según le vamos añadiendo element
 
 
 
-<link href="/scss/main.css" rel="stylesheet">
+<link href="/dwes/scss/main.css" rel="stylesheet">
 
 <script
   src="https://code.jquery.com/jquery-3.7.1.min.js"
@@ -60,28 +60,28 @@ La forma de construir una imagen es en capas, según le vamos añadiendo element
     <header>
       <nav class="td-navbar js-navbar-scroll "  data-bs-theme="dark">
 <div class="container-fluid flex-column flex-md-row ">
-  <a class="navbar-brand" href="/fr/"><span class="navbar-brand__logo navbar-logo">
-    <img src="/images/logo.png" alt="Logo" width="150" height="auto" />
+  <a class="navbar-brand" href="/dwes/fr/"><span class="navbar-brand__logo navbar-logo">
+    <img src="/dwes/images/logo.png" alt="Logo" width="150" height="auto" />
     </span><span class="navbar-brand__name">Docsy</span></a>
   <div class="td-navbar-nav-scroll ms-md-auto" id="main_navbar">
     <ul class="navbar-nav">
       <li class="nav-item">
-        <a class="nav-link" href="/fr/docs/02_docker/"><span>Docker</span></a>
+        <a class="nav-link" href="/fr/dwes/docs/02_docker/"><span>Docker</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/fr/docs/03_hugo/"><span>Documentación</span></a>
+        <a class="nav-link" href="/dwes/fr/docs/03_hugo/"><span>Documentación</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="/fr/docs/03_hugo/"><span>Hugo</span></a>
+        <a class="nav-link" href="/fr/dwes/docs/03_hugo/"><span>Hugo</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link active" href="/fr/docs/02_docker/1_docker/"><span>Docker</span></a>
+        <a class="nav-link active" href="/dwes/fr/docs/02_docker/1_docker/"><span>Docker</span></a>
       </li>
       <li class="nav-item dropdown d-none d-lg-block">
         <div class="dropdown">
   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Francés</a>
   <ul class="dropdown-menu">
-    <li><a class="dropdown-item" href="/es/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/">Español</a></li>
+    <li><a class="dropdown-item" href="/dwes/es/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/">Español</a></li>
     </ul>
 </div></li>
       </ul>
@@ -108,7 +108,7 @@ La forma de construir una imagen es en capas, según le vamos añadiendo element
 Version imprimable multipages.
 <a href="#" onclick="print();return false;">Cliquer ici pour imprimer</a>.
 </p><p>
-<a href="/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/">Retour à la version par défaut</a>.
+<a href="/dwes/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/">Retour à la version par défaut</a>.
 </p>
 </div>
 
@@ -155,7 +155,7 @@ La idea es tener un contenedor según nuestra necesidad, y con él, crear una im
 </span></span><span style="display:flex;"><span>docker <span style="color:#658b00">export</span>
 </span></span><span style="display:flex;"><span>docker import
 </span></span></code></pre></div></blockquote>
-<h4 id="__1-crea-una-imagen-llamada-hahahugoshortcode26s1hbhb-a-partir-del-conenedor-hahahugoshortcode26s2hbhb__"><strong>1. Crea una imagen llamada 
+<h4 id="__1-crea-una-imagen-llamada-hahahugoshortcode22s1hbhb-a-partir-del-conenedor-hahahugoshortcode22s2hbhb__"><strong>1. Crea una imagen llamada 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -307,7 +307,7 @@ Lo que se almacena  en el <strong>fichero tar</strong> es <strong>la imagen del 
 
 
 </blockquote>
-<h4 id="__5-crea-una-imagen-llamada-hahahugoshortcode26s10hbhb-a-partir-del-fichero-hahahugoshortcode26s11hbhb__"><strong>5. Crea una imagen llamada 
+<h4 id="__5-crea-una-imagen-llamada-hahahugoshortcode22s10hbhb-a-partir-del-fichero-hahahugoshortcode22s11hbhb__"><strong>5. Crea una imagen llamada 
 <strong>
 <span class="font-weight-bold text-text-success">
 
@@ -416,7 +416,7 @@ Lo que se almacena  en el <strong>fichero tar</strong> es <strong>la imagen del 
 </div>
 
 <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 882px">
-<img class="card-img-top" src="/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/dockerhub_hu6343802249552047288.png" width="872" height="299">
+<img class="card-img-top" src="/dwes/fr/docs/02_docker/1_docker/04_ejercicios/3_contenedores_imagenes/dockerhub_hu6343802249552047288.png" width="872" height="299">
 <figcaption class="card-body px-0 pt-2 pb-0">
 <p class="card-text">
 
@@ -551,9 +551,9 @@ window.markmap = {
 };
 </script>
 <script src="https://cdn.jsdelivr.net/npm/markmap-autoloader"></script>
-<script src="/js/main.js"></script>
-<script defer src="/js/click-to-copy.js" crossorigin="anonymous"></script>
-<script src='/js/tabpane-persist.js'></script>
+<script src="/dwes/js/main.js"></script>
+<script defer src="/dwes/js/click-to-copy.js" crossorigin="anonymous"></script>
+<script src='/dwes/js/tabpane-persist.js'></script>
 
   </body>
 </html>
