@@ -6434,6 +6434,23 @@ Luego, aplica ese color al texto que coloques dentro del shortcode.</li>
 </div></p>
 </li>
 </ol>
+
+
+<div class="alert alert-warning" role="alert">
+<h4 class="alert-heading">Muy importante</h4>
+
+    <p>Observa cómo cualquier estructura que abramos, hay que cerrarla</p>
+<pre tabindex="0"><code class="language-got-html-template" data-lang="got-html-template">{{range ...}}
+ // código de este blucle
+{{end}}
+{{if ...}}
+ // código de esta selección 
+{{end}}
+</code></pre><p>Si no lo haces, te dará un error EOF (Encuento el final de fichero y no debería de haberlo encontrado, ya que tendría que haber encontrado antes un final de estructrua de control).</p>
+
+
+</div>
+
 <h3 id="práctica">Práctica</h3>
 
 
@@ -7654,7 +7671,13 @@ Cada json contiene <strong>name</strong> y <strong>channels</strong> y channels 
 <div class="pageinfo pageinfo-primary">
 <p><strong>La ubicación del fichero</strong></p>
 <hr>
-<p><img alt="fichero plantilla para canales de tv" src="/images/relearn/plantillas/plantilla_tv.png"></p>
+ <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 410px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/7_plantillas/datos/plantilla_tv_hu11397041522118336721.png" width="400" height="450">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+</p>
+</figcaption>
+</figure>
 
 </div>
 

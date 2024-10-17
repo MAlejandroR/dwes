@@ -2184,7 +2184,7 @@ Puedes verificar si tu sitio se despliega correctamente visitando la URL proporc
 <p>Pues podría cargar ese vídeo usando el <strong>shortcode</strong> de hugo</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#eed;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-go-html-template" data-lang="go-html-template"><span style="display:flex;"><span><span style="color:#1e889b">{{</span><span style="color:#bbb"> </span><span style="color:#a61717;background-color:#e3d2d2">&lt;</span>youtube<span style="color:#bbb"> </span>j9WyKTGAO2w<span style="color:#a61717;background-color:#e3d2d2">&gt;</span><span style="color:#1e889b">}}</span>
 </span></span></code></pre></div><p>El efecto de ponerlo es el siguiente</p>
-<h2 id="hahahugoshortcode123s5hbhb">
+<h2 id="hahahugoshortcode69s5hbhb">
 
     
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -4054,17 +4054,23 @@ Cada json contiene <strong>name</strong> y <strong>channels</strong> y channels 
 <div class="pageinfo pageinfo-primary">
 <p><strong>La ubicación del fichero</strong></p>
 <hr>
-<p><img alt="fichero plantilla para canales de tv" src="/images/relearn/plantillas/plantilla_tv.png"></p>
+ <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 261px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/7_plantillas/datos/plantilla_tv_hu10175030536610481511.png" width="251" height="89">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+</p>
+</figcaption>
+</figure>
 
 </div>
 
-Hay que entender el doble bucle que hay cuya sintaxis, en lugar del for al que estamos acostumbrados es <strong>range</strong>.
-En definitiva lo que hace es recorrer el array inicial y para cada elemento recorro el elemento <em>channels</em> que como se puede ver es otro array</p>
+Hay que entender el doble bucle que hay cuya sintaxis, en lugar del for al que estamos acostumbrados es <strong>range</strong>.</p>
+<p>En definitiva lo que hace es recorrer el array inicial y para cada elemento recorro el elemento <em>channels</em> que como se puede ver es otro array</p>
 <p>Observa la sintaxis y mira cómo cada <strong>range</strong> tiene su <strong>end</strong></p>
-<p>Una vez que hemos creado la plantilla, vamos a consumirla desde un fichero de markdown.
-Lo único que tendremos que hacer es cargar esa página con la plantilla que hemos creado previamente.
-Cómo queremos que se cargue la misma estructura que todas las plantillas de nuestro sitio web, debemos buscar la plantilla base e incluir los elementos en esta plantilla
-La plantilla base de las páginas está en 
+<p>Una vez que hemos creado la plantilla, vamos a consumirla desde un fichero de markdown.</p>
+<p>Lo único que tendremos que hacer es cargar esa página con la plantilla que hemos creado previamente.</p>
+<p>Cómo queremos que se cargue la misma estructura que todas las plantillas de nuestro sitio web, debemos buscar la plantilla base e incluir los elementos en esta plantilla</p>
+<p>La plantilla base de las páginas está en 
 <strong>
 <span class="font-weight-bold text-primary">
 
@@ -4155,7 +4161,16 @@ Ahora creamos la página markdown que usará esta plantilla, la creamos bajo pra
 <div class="pageinfo pageinfo-primary">
 <p>**El resultado de la ejecución **</p>
 <hr>
-<p><img alt="Ejecución de carga de datos" src="/images/relearn/plantillas/canales_tv.png"></p>
+ <figure class="card rounded p-2 td-post-card mb-4 mt-4" style="max-width: 1350px">
+<img class="card-img-top" src="/dwes/es/docs/03_hugo/7_plantillas/datos/canales_tv_hu2821035534295749672.png" width="1340" height="970">
+<figcaption class="card-body px-0 pt-2 pb-0">
+<p class="card-text">
+<ul>
+<li></li>
+</ul>
+</p>
+</figcaption>
+</figure>
 
 </div>
 

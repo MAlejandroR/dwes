@@ -50,16 +50,24 @@ Cada json contiene **name** y **channels** y channels es un array con todos los 
 {{% pageinfo%}}
  **La ubicación del fichero**
  ***
- ![fichero plantilla para canales de tv](/images/relearn/plantillas/plantilla_tv.png)
+ {{< imgproc plantilla_tv Fill "251x89" >}}
+ 
+ {{< /imgproc >}}
 {{% /pageinfo%}}
  Hay que entender el doble bucle que hay cuya sintaxis, en lugar del for al que estamos acostumbrados es **range**.
+
 En definitiva lo que hace es recorrer el array inicial y para cada elemento recorro el elemento *channels* que como se puede ver es otro array
+
 
 Observa la sintaxis y mira cómo cada **range** tiene su **end**
 
+
 Una vez que hemos creado la plantilla, vamos a consumirla desde un fichero de markdown.
+
 Lo único que tendremos que hacer es cargar esa página con la plantilla que hemos creado previamente.
+
 Cómo queremos que se cargue la misma estructura que todas las plantillas de nuestro sitio web, debemos buscar la plantilla base e incluir los elementos en esta plantilla
+
 La plantilla base de las páginas está en {{<color>}}themes/layouts/_defaults/single.html{{</color>}} cuyo contenido editamos y copiamos en nuestra plantilla de {{<color>}}datos_tv.html{{</color>}}
 {{% pageinfo%}}
  **Plantilla de datos_tv.html incluyendo la plantilla base.html**
@@ -113,7 +121,9 @@ Vemos que especificamos en el front matter la variable {{<color>}}layout{{</colo
 {{% pageinfo%}}
  **El resultado de la ejecución **
  ***
- ![Ejecución de carga de datos](/images/relearn/plantillas/canales_tv.png)
+ {{< imgproc canales_tv Fill "1340x970" >}}
+ -
+ {{< /imgproc >}}
 {{% /pageinfo%}}
 
 ### Práctica
