@@ -2,6 +2,9 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/dwes/es/docs/06_php/01_introduccion/</loc>
+    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
+  </url><url>
     <loc>http://localhost:1313/dwes/es/docs/02_docker/1_docker/01_conceptos/</loc>
     <xhtml:link
                 rel="alternate"
@@ -230,12 +233,6 @@
                 hreflang="es"
                 href="http://localhost:1313/dwes/es/"
                 />
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/docs/06_php/01_introduccion/</loc>
-    <lastmod>2024-10-15T07:04:49+02:00</lastmod>
-  </url><url>
-    <loc>http://localhost:1313/dwes/es/es/</loc>
-    <lastmod>2024-10-15T07:03:35+02:00</lastmod>
   </url><url>
     <loc>http://localhost:1313/dwes/es/docs/06_php/</loc>
     <lastmod>2024-09-15T00:00:00+00:00</lastmod>

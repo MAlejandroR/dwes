@@ -140,12 +140,6 @@ Una vez colocada en la carpeta los ficheros de recursos que queremos que sean ac
 `````
 Este shortcode tiene muchas opciones que puedes probar
 
-
-#### extends
-
-
-#### notice
-
 #### mermaind
 Interesante shortcode que 
 
@@ -166,6 +160,226 @@ Los gráficos generados pueden moverse arrastrándolos y hacer zoom con la rueda
 
 
 
+### Creación de un Shortcode en Hugo
+
+En Hugo, los **shortcodes** son fragmentos reutilizables de código que permiten añadir contenido dinámico en tus páginas. Para crear un shortcode, sigue estos pasos:
+
+1. Crea un archivo con la extensión `.html` en la carpeta `layouts/shortcodes/`.
+2. Dentro del archivo, define el contenido del shortcode usando HTML o Go Templates.
+
+Ejemplo de un shortcode básico (`example.html`):
+```html
+<p>Este es un contenido de shortcode: {{ .Get "text" }}</p>
+
+```
+Para usarlo en un archivo .md, llama al shortcode con:
+
+{{< highlight markdown "linenos=table, hl_lines=1" >}}
+
+   { {< example text="¡Hola, Shortcode!" >}}
+
+{{< / highlight >}}
+{{< alert title="Úsalos sin abusar" color="info" >}}
+Los shortcodes son útiles para insertar bloques de código repetitivos y personalizables en varias partes del sitio.
+
+{{< /alert >}}
+
+```css
+/* Aquí podrías agregar estilos CSS personalizados para mejorar la presentación del shortcode */
+```
+
+#### Crear  Shortcodes personalizado
+{{< pageinfo>}}
+{{< color >}} Crear un Shortcode para Texto con Color Personalizado  {{< /color >}}
+ 
+{{< line >}}
+{{< objetivos  title="Práctica" sub_title="Crear un shortcode para el color del texto">}}
+Este shortcode permite cambiar el color del texto que envuelvas en él, y si no especificas un color, usará el color rojo por defecto. A continuación te explico cómo crearlo:
+
+{{< /objetivos >}}
+{{< /pageinfo>}}
+{{< alert title="Muy importante" color="danger" >}}
+1. Crear el shortcode:
+> Creo en un directorio concreto un fichero llamado <strong> nombre_shortcode.html </strong> creando un <strong>trocito de html</strong>
+
+2. Invocar al shortcode:
+> En un fichero markdown, donde quiero   que se rederice ese trocito de html, lo invoco como vemos a continuación
+{{< /alert >}}
+
+{{< highlight go-html-template "linenos=table, hl_lines=1" >}}
+
+{{</*nombre_shortcode*/>}}
+contenido que se recibirá como .Inner dentro del shortcode
+{{</*/nombre_shortcode*/>}}
+
+{{< / highlight >}}
+{{% line %}}
+
+Creando el shortcode:
+
+1. Crea un archivo en la carpeta `layouts/shortcodes/` llamado `color.html`.     
+2. Dentro del archivo `color.html`, añade este código:
+
+3.- Un shortcode se crea y luego se invoca (2 conceptos que hay que tener muy claros)
+
+
+```html
+{{$color := .Get "color" | default "red" }}
+<span style="color:{{ $color }}; font-weight:bold">
+  { { .Inner }}
+</span>
+```
+
+{{< pageinfo>}}
+{{< color >}} Crear un Shortcode para Mostrar objetivos  {{< /color >}}
+
+{{< line >}}
+{{< objetivos  title="Práctica" sub_title="Crear un shortcode para mostrar obejtivos">}}
+Este shortcode permite visualizar un listado de objetivos
+Sería como éste cuadradito que estás viendo.
+Y muestra su contenido como un listado de items.
+{{< /objetivos >}}
+{{< /pageinfo>}}
+
+> * En este caso queremos dos parámetros: el title y el subtitle
+> * Por otro lado necesitamos coger el contenido y mostrarlo en una lista
+> * Lo invocaremos así, el ejemplo anterior está invocado:
+{{< highlight php "linenos=table, hl_lines=1 5" >}}
+{{</* objetivos  title="Práctica" sub_title="Crear un shortcode para mostrar obejtivos"*/>}}
+    Este shortcode permite visualizar un listado de objetivos
+    Sería como éste cuadradito que estás viendo.
+    Y muestra su contenido como un listado de items.
+{{</* /objetivos */>}}
+{{</*/*/>}}
+{{< / highlight >}}
+Luego, aplica ese color al texto que coloques dentro del shortcode.
+
+{{< imgproc shortcode Fill "1138x598" >}}
+
+{{< /imgproc >}}
+
+{{< color >}} El código {{< /color >}}
+
+{{< highlight html "linenos=table, hl_lines=1" >}}
+{ $title := .Get "title" | default "Objetivos" }}
+{{ $sub_title := .Get "sub_title" | default "Qué veremos aquí" }}
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        <!-- Icono de objetivos -->
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> <!-- Icono de diana para "Objetivos" -->
+        </span>
+        <!-- Título en negrita con un poco de margen -->
+        <span >{{ $title }}</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> {{$sub_title}}</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    <!-- Texto con fondo más claro y margen interno -->
+    <div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+        {{ range (split .Inner "\n")}}
+            {{- if gt (len .) 0 -}}
+              <li>{{.}}</li>
+            {{end}}
+        {{ end}}
+        </ul>
+
+    </div>
+</div>
+{{< / highlight >}}
+
+{{< color >}} Puntos importantes para explicar {{< /color >}}
+
+1. Observa cómo creamos las variables y las leemos del shortcode dándelo un valor por defecto
+{{< highlight php "linenos=table, hl_lines=1 2" >}}
+   { $title := .Get "title" | default "Objetivos" }}
+   {{ $sub_title := .Get "sub_title" | default "Qué veremos aquí" }}
+{{< / highlight >}} 
+2. A continuación va código html normal con estilo, pero observa cuando quiero escribir el valor de las variables previamente creados:
+{{< highlight php "linenos=table, hl_lines=11 14" >}}
+   
+
+<div style="border: 1px solid darkgreen; border-radius: 5px; overflow: hidden;">
+    <div style="background-color:darkgreen; color:white;
+    font-weight:bold; padding:10px; display: flex; align-items: center;">
+        <!-- Icono de objetivos -->
+        <span style="margin-right: 8px;">
+            <i class="fas  fa-check-circle"></i> <!-- Icono de diana para "Objetivos" -->
+        </span>
+        <!-- Título en negrita con un poco de margen -->
+        <span >{{ $title }}</span>
+    </div>
+
+    <h3 style="padding: 5px;font-weight:bold"> {{$sub_title}}</h3>
+
+    <hr style="border-color:seagreen;border-width:3px"/>
+    <!-- Texto con fondo más claro y margen interno -->
+   
+
+    </div>
+</div>
+
+{{< / highlight >}}
+3. Como recojo el valor del contenido (inner), lo rompemos en filas y lo mostramos como un listado no ordenado
+   4. Fíjate la manero de realizar un split o rotura de una cadena, quedándonos con un array de filas. Rompo la cadena con el carácter {{< color >}} fín de línea  {{< /color >}}. Para ello uso la función {{< color >}} split {{< /color >}}. 
+   5. Para comprender mejor este código lo vamos a reescribir buscando una mayor legibilidad.
+{{< highlight php "linenos=table, hl_lines=3 9" >}}
+<div style="background-color:#d0f0d0; color:darkgreen; padding: 10px;">
+        <ul>
+            {{ $lineas := split .Inner "\n"}}
+            {{ range $lineas}}
+                {{ $linea := .}}
+                {{ if gt (len $linea) 0 }}
+                  <li>{{$linea}}</li>
+                {{end}}
+            {{ end}}
+        </ul>
+
+    </div>
+{{< / highlight >}}
+
+1.  `$lineas` es un array con cada una de las líneas
+{{< highlight php "linenos=table, hl_lines=1" >}}
+    {{ $lineas := split .Inner "\n"}}
+{{< / highlight >}} 
+2.  `range` es la estructura de control que va a recorrer cada elemento del array
+{{< highlight php "linenos=table, hl_lines=1 3" >}}
+    {{ range $lineas}}
+      ....      
+    {{ end}}
+{{< / highlight >}}
+3. En cada interación su valor que queda en el contexto actual refereniado con el `punto (.)`
+4. Guardo el valor en la variabble `$linea` (busco legibilidad)
+{{< highlight php "linenos=table, hl_lines=1" >}}
+   {{ $linea := .}}
+{{< / highlight >}} 
+5. Verifico que la línea no esté vacía, para eliminar líneas en blanco 
+{{< highlight php "linenos=table, hl_lines=1" >}}
+   {{ if gt (len $linea) 0 }}
+   ..... 
+   {{end}}
+{{< / highlight >}} 
+6. Visualizo su contenido en un elemento de hmtl <li>
+  {{< highlight php "linenos=table, hl_lines=1" >}}
+   <li>{{$linea}}</li>
+  {{< / highlight >}}
+
+{{% alert title="Muy importante" color="warning" %}}
+Observa cómo cualquier estructura que abramos, hay que cerrarla
+```got-html-template
+{{range ...}}
+ // código de este blucle
+{{end}}
+{{if ...}}
+ // código de esta selección 
+{{end}}
+```
+Si no lo haces, te dará un error EOF (Encuento el final de fichero y no debería de haberlo encontrado, ya que tendría que haber encontrado antes un final de estructrua de control).
+{{% /alert %}}
 
 
 ### Práctica
